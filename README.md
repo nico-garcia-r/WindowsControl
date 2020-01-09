@@ -1,7 +1,7 @@
 # WindowsControl
 Module to control MS Windows application
 
-Can be used with "Desktop Recorder"
+This module can be used with "Desktop Recorder"
 
 <ul>
   <li>
@@ -10,6 +10,8 @@ Can be used with "Desktop Recorder"
     </strong> 
   </li>  
 </ul>  
+
+![alt text](https://raw.githubusercontent.com/rocketbot-cl/WindowsControl/master/example/recorder.png)
 
 <h2>Dependencies</h2>
 

@@ -23,12 +23,18 @@ Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
     pip install <package> -t .
 
 """
+import os.path
+base_path = tmp_global_obj["basepath"]
+cur_path = base_path + "modules" + os.sep + "WindowsControl" + os.sep + "libs" + os.sep
+sys.path.append(cur_path)
+
 import pywinauto
 from time import sleep
 from uiautomation import uiautomation as auto
 import json
 import xml.etree.ElementTree as ET
 import copy
+
 try:
     #import pywinauto as pw
     """"""
@@ -70,31 +76,37 @@ def getSelector(Selector):
     return command_
 
 def getControlType(parent, obj):
-    
+    controlObjet = None
     try:
         controlTypeName = obj["controlTypeName"]
         print(controlTypeName)
-        if controlTypeName == "MenuItemControl":
-            controlObjet = parent.MenuItemControl(Name=obj["name"])
-        elif controlTypeName == "MenuBarControl":
-            controlObjet = parent.MenuBarControl(Name=obj["name"])
-        elif controlTypeName == "WindowControl":
-            controlObjet = parent.WindowControl(Name=obj["name"])
-        elif controlTypeName == "PaneControl":
-            controlObjet = parent.PaneControl(Name=obj["name"])
-        elif controlTypeName == "EditControl":
-            controlObjet = parent.EditControl(Name=obj["name"])
-        elif controlTypeName == "CheckBoxControl":
-            controlObjet = parent.CheckBoxControl(Name=obj["name"])
-        elif controlTypeName == "ComboBoxControl":
-            controlObjet = parent.ComboBoxControl(Name=obj["name"])
-        elif controlTypeName == "ButtonControl":
-            controlObjet = parent.ButtonControl(Name=obj["name"])
-        elif controlTypeName == "RadioButtonControl":
-            controlObjet = parent.RadioButtonControl(Name=obj["name"])
-    except Exception as e:
-        raise e
         
+        ctlId = obj["ctrlId"]
+        
+        if controlTypeName == "MenuItemControl":
+            controlObjet = parent.MenuItemControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "MenuBarControl":
+            controlObjet = parent.MenuBarControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "WindowControl":
+            controlObjet = parent.WindowControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "PaneControl":
+            controlObjet = parent.PaneControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "EditControl":
+            controlObjet = parent.EditControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "CheckBoxControl":
+            controlObjet = parent.CheckBoxControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "ComboBoxControl":
+            controlObjet = parent.ComboBoxControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "ButtonControl":
+            controlObjet = parent.ButtonControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "RadioButtonControl":
+            controlObjet = parent.RadioButtonControl(Name=obj["name"], AutomationId=ctlId)
+        elif controlTypeName == "TextControl":
+            controlObjet = parent.TextControl(Name=obj["name"], AutomationId=ctlId)
+    except Exception as e:
+        controlObjet = parent.Control(Name=obj["name"], AutomationId=ctlId)
+    if not controlObjet:
+        controlObjet = parent.Control(Name=obj["name"], AutomationId=ctlId)
 
     return controlObjet
 
@@ -138,8 +150,10 @@ def getLastChildren(selector):
     children = selector["children"]
     i = 1
     while(children):
-        if children["children"]:
+        print(children)
+        if children["children"] and children["children"]["cls"] != 	"UIProperty":
             children = children["children"]
+            print(children)
         else:
             break
 
@@ -197,7 +211,14 @@ if module == "GetValue":
     obj = getLastChildren(selector)
     control = getControlType(parent, obj)
     control.SetFocus()
-    currentValue = control.GetValuePattern().Value
+    if obj["controlTypeName"] == "EditControl":
+        try:
+            currentValue = control.GetValuePattern().Value
+        except:
+            currentValue = control.GetWindowText()
+    else:
+        currentValue = obj["name"]
+
     try:
         SetVar( var_,  str(currentValue))
     except Exception as e:
@@ -221,11 +242,17 @@ if module == "SetValue":
 
     control = getControlType(parent, obj)
     control.SetFocus()
-    if not clean:
-        currentValue = control.GetValuePattern().Value
+    if not clean:        
+        try:
+            currentValue = control.GetValuePattern().Value
+        except:
+            currentValue = control.GetWindowText()
         if currentValue:
             Text = currentValue + "\r\n" + Text
-    control.GetValuePattern().SetValue(Text)
+    try:
+        control.GetValuePattern().SetValue(Text)
+    except:
+        control.SetWindowText(Text)
     
 if module == "SelectItem":
     Selector = GetParams("Selector")
@@ -288,10 +315,14 @@ if module == "Click":
 
     if len(str(Selector)) > 1:
         try:
-            parent = auto.WindowControl(ClassName=selector["children"]["cls"])
+            if "mozilla" in selector["children"]["cls"].lower() or "chrome" in selector["children"]["cls"].lower():
+                className = selector["children"]["children"]["cls"]
+            else:
+                className = selector["children"]["cls"]
+            parent = auto.WindowControl(ClassName=className)
             obj = getLastChildren(selector)
             control = getControlType(parent, obj)
-            
+        
             if ClickType != "CLICK_DOUBLE":
                 
                 if MouseButton == "BTN_LEFT":

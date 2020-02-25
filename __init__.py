@@ -43,6 +43,7 @@ except:
 """
     Obtengo el modulo que fueron invocados
 """
+global module
 module = GetParams("module")
 
 """
@@ -82,30 +83,33 @@ def getControlType(parent, obj):
         controlTypeName = obj["ctrltype"]
         print(controlTypeName)
 
-        if controlTypeName == "MenuItemControl":
-            controlObjet = parent.MenuItemControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "MenuBarControl":
-            controlObjet = parent.MenuBarControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "WindowControl":
-            controlObjet = parent.WindowControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "ListItemControl":
-            controlObjet = parent.ListItemControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "PaneControl":
-            controlObjet = parent.PaneControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "EditControl":
-            controlObjet = parent.EditControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "CheckBoxControl":
-            controlObjet = parent.CheckBoxControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "ComboBoxControl":
-            controlObjet = parent.ComboBoxControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "ButtonControl":
-            controlObjet = parent.ButtonControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "RadioButtonControl":
-            controlObjet = parent.RadioButtonControl(Name=obj["title"], AutomationId=ctrlId)
-        elif controlTypeName == "TextControl":
-            controlObjet = parent.TextControl(Name=obj["title"], AutomationId=ctrlId)
+        if module == "GetValue":
+            if controlTypeName == "MenuItemControl":
+                controlObjet = parent.MenuItemControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "MenuBarControl":
+                controlObjet = parent.MenuBarControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "WindowControl":
+                controlObjet = parent.WindowControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "ListItemControl":
+                controlObjet = parent.ListItemControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "PaneControl":
+                controlObjet = parent.PaneControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "EditControl":
+                controlObjet = parent.EditControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "CheckBoxControl":
+                controlObjet = parent.CheckBoxControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "ComboBoxControl":
+                controlObjet = parent.ComboBoxControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "ButtonControl":
+                controlObjet = parent.ButtonControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "RadioButtonControl":
+                controlObjet = parent.RadioButtonControl(Name=obj["title"], AutomationId=ctrlId)
+            elif controlTypeName == "TextControl":
+                controlObjet = parent.TextControl(Name=obj["title"], AutomationId=ctrlId)
+        else:
+            controlObjet = parent.Control(AutomationId=ctrlId)
     except Exception as e:
-        controlObjet = parent.Control(Name=obj["title"], AutomationId=ctrlId)
+        controlObjet = parent.Control(AutomationId=ctrlId)
         PrintException()
         raise e
     if not controlObjet:
@@ -216,13 +220,12 @@ if module == "GetValue":
     obj = selector["children"][-1]
     control = getControlType(parent, obj)
     control.SetFocus()
-    if obj["ctrltype"] == "EditControl":
-        try:
-            currentValue = control.GetValuePattern().Value
-        except:
-            currentValue = control.GetWindowText()
-    else:
-        currentValue = obj["title"]
+    
+    try:
+        currentValue = control.GetValuePattern().Value
+    except:
+        currentValue = control.GetWindowText()
+    
 
     try:
         SetVar( var_,  str(currentValue))

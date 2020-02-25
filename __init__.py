@@ -88,6 +88,8 @@ def getControlType(parent, obj):
             controlObjet = parent.MenuBarControl(Name=obj["title"], AutomationId=ctrlId)
         elif controlTypeName == "WindowControl":
             controlObjet = parent.WindowControl(Name=obj["title"], AutomationId=ctrlId)
+        elif controlTypeName == "ListItemControl":
+            controlObjet = parent.ListItemControl(Name=obj["title"], AutomationId=ctrlId)
         elif controlTypeName == "PaneControl":
             controlObjet = parent.PaneControl(Name=obj["title"], AutomationId=ctrlId)
         elif controlTypeName == "EditControl":
@@ -179,12 +181,10 @@ if module == "WindowScope":
     command_["timeout"]=str(timeout_)
     if len(str(command_)) > 1:
         windowScope = pywinauto.Application()
-
-
         try:
             command_ = windowScope.connect( **command_ )
             windowScope.top_window().set_focus()
-            windowScope.top_window().print_control_identifiers()
+            # windowScope.top_window().print_control_identifiers()
         except Exception as e:
             SetVar( var_,  False)
             raise Exception(e)    
@@ -245,7 +245,10 @@ if module == "SetValue":
     # parent = auto.WindowControl(ClassName=selector["children"]["cls"])
     # obj = getLastChildren(selector)
     # control = getControlType(parent, obj)
-    className = selector["parent"]["cls"]
+    if "mozilla" in selector["parent"]["cls"].lower() or "chrome" in selector["parent"]["cls"].lower():
+        className = selector["children"][0]["cls"]
+    else:
+        className = selector["parent"]["cls"]
     parent = auto.WindowControl(ClassName=className)
     obj = selector["children"][-1]
     control = getControlType(parent, obj)
@@ -330,13 +333,11 @@ if module == "Click":
                 className = selector["children"][0]["cls"]
             else:
                 className = selector["parent"]["cls"]
-            print(className)
             parent = auto.WindowControl(ClassName=className)
             obj = selector["children"][-1]
             control = getControlType(parent, obj)
         
             if ClickType != "CLICK_DOUBLE":
-                
                 if MouseButton == "BTN_LEFT":
                     control.Click(simulateMove=False, waitTime=0.5)
                 if MouseButton == "BTN_RIGHT":
@@ -349,7 +350,6 @@ if module == "Click":
         except Exception as e:
             PrintException()
             raise e
-        print("re", result_)
     try:
         SetVar( var_,  str(result_))
     except Exception as e:

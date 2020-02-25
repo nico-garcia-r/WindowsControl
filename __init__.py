@@ -83,37 +83,40 @@ def getControlType(parent, obj):
         controlTypeName = obj["ctrltype"]
         print(controlTypeName)
 
-        if module == "GetValue":
+        if ctrlId:
             if controlTypeName == "MenuItemControl":
-                controlObjet = parent.MenuItemControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.MenuItemControl(AutomationId=ctrlId)
             elif controlTypeName == "MenuBarControl":
-                controlObjet = parent.MenuBarControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.MenuBarControl(AutomationId=ctrlId)
             elif controlTypeName == "WindowControl":
-                controlObjet = parent.WindowControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.WindowControl(AutomationId=ctrlId)
             elif controlTypeName == "ListItemControl":
-                controlObjet = parent.ListItemControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.ListItemControl(AutomationId=ctrlId)
             elif controlTypeName == "PaneControl":
-                controlObjet = parent.PaneControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.PaneControl(AutomationId=ctrlId)
             elif controlTypeName == "EditControl":
-                controlObjet = parent.EditControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.EditControl(AutomationId=ctrlId)
             elif controlTypeName == "CheckBoxControl":
-                controlObjet = parent.CheckBoxControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.CheckBoxControl(AutomationId=ctrlId)
             elif controlTypeName == "ComboBoxControl":
-                controlObjet = parent.ComboBoxControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.ComboBoxControl(AutomationId=ctrlId)
             elif controlTypeName == "ButtonControl":
-                controlObjet = parent.ButtonControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.ButtonControl(AutomationId=ctrlId)
             elif controlTypeName == "RadioButtonControl":
-                controlObjet = parent.RadioButtonControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.RadioButtonControl(AutomationId=ctrlId)
             elif controlTypeName == "TextControl":
-                controlObjet = parent.TextControl(Name=obj["title"], AutomationId=ctrlId)
+                controlObjet = parent.TextControl(AutomationId=ctrlId)
+            else:
+                controlObjet = parent.Control(AutomationId=ctrlId)
         else:
-            controlObjet = parent.Control(AutomationId=ctrlId)
+             controlObjet = parent.Control(Name=obj["title"])
+
     except Exception as e:
         controlObjet = parent.Control(AutomationId=ctrlId)
         PrintException()
         raise e
     if not controlObjet:
-        controlObjet = parent.Control(Name=obj["title"], AutomationId=ctrlId)
+        controlObjet = parent.Control(AutomationId=ctrlId)
 
     return controlObjet
 

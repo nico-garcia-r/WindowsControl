@@ -267,6 +267,28 @@
                         "css": "col-md-12"
                     },
                     {
+                        "type": "select",
+                        "placeholder": {
+                            "es": "",
+                            "en": ""
+                        },
+                        "title": {
+                            "es": "Seleccionar padre",
+                            "en": "Select parent"
+                        },
+                        "options":[
+                            {"title": "Clase", "value": "cls"},
+                            {"title": "Id", "value": "ctrlid"},
+                            {"title": "Title", "value": "title"}
+                        ],
+                        "help": {
+                            "en": "Optional",
+                            "es": "Opcional"
+                        },
+                        "id": "parentControl",
+                        "css": "col-md-6"
+                    },
+                    {
                         "type": "input",
                         "placeholder": {
                             "es": "{resultado}",
@@ -283,7 +305,6 @@
                         "id": "result",
                         "css": "col-md-6"
                     }
-
                 ]
             },
             "video_youtube": "",

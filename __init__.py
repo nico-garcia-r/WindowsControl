@@ -78,7 +78,7 @@ def getSelector(Selector):
 
 
 def create_control(select, ancestor):
-    class_name = select["parent"]["cls"]
+    # class_name = select["parent"]["cls"]
     if len(select["children"]) > 1:
         parent = select["children"][-2]
         has_parent = True
@@ -95,6 +95,7 @@ def create_control(select, ancestor):
         name = parent["title"]
 
     if automation_id and name:
+
         parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], AutomationId=automation_id, Name=name)
     elif automation_id:
         parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], AutomationId=automation_id)
@@ -102,11 +103,12 @@ def create_control(select, ancestor):
         parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], Name=name)
 
     if not has_parent:
-        return parentControl
+        return parent_control
 
     if parent_control:
         for i, child in enumerate(parent_control.GetChildren()):
             if i == position_child:
+                print(child)
                 return child
 
 
@@ -190,7 +192,7 @@ if module == "GetValue":
         control = create_control(selector, ancestor)
         control.SetFocus()
         try:
-            currentValue = control.GetValuePattern().Value
+            currentValue = control.GetPattern(10002).Value
         except:
             currentValue = control.GetWindowText()
         if currentValue is None:
@@ -222,13 +224,14 @@ if module == "SetValue":
     control.SetFocus()
     if not clean:        
         try:
-            currentValue = control.GetValuePattern().Value
+            currentValue = control.GetPattern(10002).Value
         except:
             currentValue = control.GetWindowText()
+
         if currentValue:
             Text = currentValue + "\r\n" + Text
     try:
-        control.GetValuePattern().SetValue(Text)
+        control.GetPattern(10002).SetValue(Text)
     except:
         control.SetWindowText(Text)
     

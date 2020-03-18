@@ -77,9 +77,14 @@ def getSelector(Selector):
     return command_
 
 
-def create_control(select, ancestor ):
+def create_control(select, ancestor):
     class_name = select["parent"]["cls"]
-    parent = select["children"][-2]
+    if len(select["children"]) > 1:
+        parent = select["children"][-2]
+        has_parent = True
+    else:
+        parent = select["children"][-1]
+        has_parent = False
     parent_control = None
     position_child = select["children"][-1]["idx"]
     automation_id = None
@@ -96,12 +101,14 @@ def create_control(select, ancestor ):
     elif name:
         parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], Name=name)
 
+    if not has_parent:
+        return parentControl
+
     if parent_control:
         for i, child in enumerate(parent_control.GetChildren()):
             if i == position_child:
                 return child
-            else:
-                pass
+
 
 
 def getChildren(window, Selector):

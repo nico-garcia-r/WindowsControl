@@ -479,8 +479,85 @@
             "windows":true,
             "mac":false,
             "docker":false
+        },
+        {
+            "en": {
+                "title": "Wait object",
+                "description": "Wait for a object on screen",
+                "title_options": null,
+                "options":null
+            },
+            "es": {
+                "title": "Esperar objeto",
+                "description": "Espera la aparición de un objeto en pantalla",
+                "title_options": null,
+                "options":null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+                            "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+                        },
+                        "title": {
+                            "es": "Selector",
+                            "en": "Selector"
+                        },
+                        "id": "Selector",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "30",
+                            "en": "30"
+                        },
+                        "title": {
+                            "es": "Tiempo de Espera en Segundos",
+                            "en": "Timeout in Seconds"
+                        },
+                        "help": {
+                            "en": "Specifies the amount of time to wait for the activity to run before an error is thrown. The default value is 30 seconds.",
+                            "es": "Especifica el tiempo de espera para que se ejecute la actividad antes de que se genere un error. El valor predeterminado es 30 segundos."
+                        },
+                        "id": "TimeoutMS",
+                        "css": "col-md-6"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "{resultado}",
+                            "en": "{result}"
+                        },
+                        "title": {
+                            "es": "Resutlado",
+                            "en": "Result"
+                        },
+                        "help": {
+                            "en": "Variable where the result is stored without {}",
+                            "es": "Variable donde se almacena el resultado sin {}"
+                        },
+                        "id": "result",
+                        "css": "col-md-6"
+                    }
+
+                ]
+            },
+            "video_youtube": "",
+            "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6IzMwM0M0MjsiIGQ9Ik00MjYuNjY3LDBoLTM4NEMxOS4xMzUsMCwwLDE5LjEzNSwwLDQyLjY2N3YzODRjMCwyMy41MzEsMTkuMTM1LDQyLjY2Nyw0Mi42NjcsNDIuNjY3aDM4NA0KCWMyMy41MzEsMCw0Mi42NjctMTkuMTM1LDQyLjY2Ny00Mi42Njd2LTM4NEM0NjkuMzMzLDE5LjEzNSw0NTAuMTk4LDAsNDI2LjY2NywweiIvPg0KPGc+DQoJPHBhdGggaWQ9IlNWR0NsZWFuZXJJZF8wIiBzdHlsZT0iZmlsbDojNUM2NjcxOyIgZD0iTTQyLjY2NywyMS4zMzNoMzg0YzExLjc2LDAsMjEuMzMzLDkuNTczLDIxLjMzMywyMS4zMzN2NDIuNjY3SDIxLjMzM1Y0Mi42NjcNCgkJQzIxLjMzMywzMC45MDYsMzAuOTA2LDIxLjMzMyw0Mi42NjcsMjEuMzMzeiIvPg0KPC9nPg0KPGc+DQoJDQoJCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHQ2xlYW5lcklkXzBfM18iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iLTQ0LjI2MyIgeTE9IjY0Ny43OTQzIiB4Mj0iLTI2Ljk4NDEiIHkyPSI2MzkuNzM3MiIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgyMS4zMzMzIDAgMCAtMjEuMzMzMyA5OTYuMzMzNCAxMzc5MS42NjcpIj4NCgkJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRjtzdG9wLW9wYWNpdHk6MC4yIi8+DQoJCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkY7c3RvcC1vcGFjaXR5OjAiLz4NCgk8L2xpbmVhckdyYWRpZW50Pg0KCTxwYXRoIGlkPSJTVkdDbGVhbmVySWRfMF8xXyIgc3R5bGU9ImZpbGw6dXJsKCNTVkdDbGVhbmVySWRfMF8zXyk7IiBkPSJNNDIuNjY3LDIxLjMzM2gzODRjMTEuNzYsMCwyMS4zMzMsOS41NzMsMjEuMzMzLDIxLjMzMw0KCQl2NDIuNjY3SDIxLjMzM1Y0Mi42NjdDMjEuMzMzLDMwLjkwNiwzMC45MDYsMjEuMzMzLDQyLjY2NywyMS4zMzN6Ii8+DQo8L2c+DQo8Zz4NCgkNCgkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdDbGVhbmVySWRfMF80XyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItNDEuMzA2MSIgeTE9IjY0OS4yOTQ1IiB4Mj0iLTMwLjEwMDIiIHkyPSI2MzguMDg3NyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgyMS4zMzMzIDAgMCAtMjEuMzMzMyA5OTYuMzMzNCAxMzc5MS42NjcpIj4NCgkJPHN0b3AgIG9mZnNldD0iMCIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRjtzdG9wLW9wYWNpdHk6MC4yIi8+DQoJCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkY7c3RvcC1vcGFjaXR5OjAiLz4NCgk8L2xpbmVhckdyYWRpZW50Pg0KCTxwYXRoIGlkPSJTVkdDbGVhbmVySWRfMF8yXyIgc3R5bGU9ImZpbGw6dXJsKCNTVkdDbGVhbmVySWRfMF80Xyk7IiBkPSJNNDIuNjY3LDIxLjMzM2gzODRjMTEuNzYsMCwyMS4zMzMsOS41NzMsMjEuMzMzLDIxLjMzMw0KCQl2NDIuNjY3SDIxLjMzM1Y0Mi42NjdDMjEuMzMzLDMwLjkwNiwzMC45MDYsMjEuMzMzLDQyLjY2NywyMS4zMzN6Ii8+DQo8L2c+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTQyNi42NjcsNDQ4aC0zODRjLTExLjc2LDAtMjEuMzMzLTkuNTczLTIxLjMzMy0yMS4zMzN2LTMyMEg0NDh2MzIwDQoJQzQ0OCw0MzguNDI3LDQzOC40MjcsNDQ4LDQyNi42NjcsNDQ4eiIvPg0KPGc+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojMzAzQzQyOyIgY3g9IjUzLjMzMyIgY3k9IjUzLjMzMyIgcj0iMTAuNjY3Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojMzAzQzQyOyIgY3g9Ijk2IiBjeT0iNTMuMzMzIiByPSIxMC42NjciLz4NCgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiMzMDNDNDI7IiBjeD0iMTM4LjY2NyIgY3k9IjUzLjMzMyIgcj0iMTAuNjY3Ii8+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojMzAzQzQyOyIgY3g9IjM5NC42NjciIGN5PSIzOTQuNjY3IiByPSIxMTcuMzMzIi8+DQo8L2c+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiM2OUIzNDI7IiBjeD0iMzk0LjY2NyIgY3k9IjM5NC42NjciIHI9Ijk2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMzAzQzQyOyIgZD0iTTQzNy4zMzMsMzg0aC0zMnYtMzJjMC01Ljg5Ni00Ljc3MS0xMC42NjctMTAuNjY3LTEwLjY2N2MtNS44OTYsMC0xMC42NjcsNC43NzEtMTAuNjY3LDEwLjY2N3YzMg0KCWgtMzJjLTUuODk2LDAtMTAuNjY3LDQuNzcxLTEwLjY2NywxMC42NjdjMCw1Ljg5Niw0Ljc3MSwxMC42NjcsMTAuNjY3LDEwLjY2N2gzMnYzMmMwLDUuODk2LDQuNzcxLDEwLjY2NywxMC42NjcsMTAuNjY3DQoJYzUuODk2LDAsMTAuNjY3LTQuNzcxLDEwLjY2Ny0xMC42Njd2LTMyaDMyYzUuODk2LDAsMTAuNjY3LTQuNzcxLDEwLjY2Ny0xMC42NjdDNDQ4LDM4OC43NzEsNDQzLjIyOSwzODQsNDM3LjMzMywzODR6Ii8+DQo8bGluZWFyR3JhZGllbnQgaWQ9IlNWR0lEXzFfIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9Ii00OC4zNTU1IiB5MT0iNjQxLjM4NDEiIHgyPSItMjEuNjg1NSIgeTI9IjYyOC45NDgxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDIxLjMzMzMgMCAwIC0yMS4zMzMzIDk5Ni4zMzM0IDEzNzkxLjY2NykiPg0KCTxzdG9wICBvZmZzZXQ9IjAiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkY7c3RvcC1vcGFjaXR5OjAuMiIvPg0KCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkY7c3RvcC1vcGFjaXR5OjAiLz4NCjwvbGluZWFyR3JhZGllbnQ+DQo8cGF0aCBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzFfKTsiIGQ9Ik00NjkuMzMzLDMwNC4yMjVWNDIuNjY3QzQ2OS4zMzMsMTkuMTM1LDQ1MC4xOTgsMCw0MjYuNjY3LDBoLTM4NEMxOS4xMzUsMCwwLDE5LjEzNSwwLDQyLjY2Nw0KCXYzODRjMCwyMy41MzEsMTkuMTM1LDQyLjY2Nyw0Mi42NjcsNDIuNjY3aDI2MS41NkMzMjUuNzY0LDQ5NS4zNzUsMzU4LjMwNyw1MTIsMzk0LjY2Nyw1MTJDNDU5LjM2OCw1MTIsNTEyLDQ1OS4zNjcsNTEyLDM5NC42NjcNCglDNTEyLDM1OC4zMDcsNDk1LjM3NiwzMjUuNzYzLDQ2OS4zMzMsMzA0LjIyNXoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K",
+            "module": "waitObject",
+            "module_name": "WindowsControl",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": false,
+            "windows":true,
+            "mac":false,
+            "docker":false
         }
-
-
     ]
 }

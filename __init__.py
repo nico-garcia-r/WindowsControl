@@ -318,5 +318,31 @@ if module == "Click":
         PrintException()
         raise e
 
-    
+if module == "waitObject":
+    Selector = GetParams("Selector")
+    var_ = GetParams("result")
+    timeout_ = GetParams("TimeoutMS")
+    result_ = False
+    try:
+        selector = eval(Selector)
+    except Exception as ex:
+        PrintException()
+
+    try:
+        auto.SetGlobalSearchTimeout(int(timeout_))
+        className = selector["parent"]["cls"]
+        ancestor = auto.WindowControl(ClassName=className)
+        control = create_control(selector, ancestor)
+
+        if control:
+            result_ = True
+
+        auto.SetGlobalSearchTimeout(30)
+        if var_:
+            SetVar(var_, result_)
+    except Exception as e:
+        SetVar(var_, result_)
+        PrintException()
+        raise e
+
     

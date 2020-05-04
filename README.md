@@ -12,7 +12,7 @@ This module can be used with "Desktop Recorder"
 </ul>  
 
 ## Commands
-<ul>
+<ul id="commands_readme">
     <li>Click</li>
     <li>Get Text</li>
     <li>Set Text</li>

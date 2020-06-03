@@ -151,28 +151,32 @@ if module == "WindowScope":
     command_ = ""
     app = None
 
-    try:
-        if len(str(TimoutMS).strip()) > 0:
-            timeout_ = int(TimoutMS)
-    except:
-        pass
-    command_ = getSelector(Selector)
-    command_["timeout"] = str(timeout_)
-    if len(str(command_)) > 1:
-        windowScope = pywinauto.Application()
-        try:
-            command_ = windowScope.connect(**command_)
-            windowScope.top_window().set_focus()
-            # windowScope.top_window().print_control_identifiers()
-        except Exception as e:
-            SetVar(var_, False)
-            raise Exception(e)
 
-    else:
-        raise Exception("No Selector")
     try:
+        try:
+            if len(str(TimoutMS).strip()) > 0:
+                timeout_ = int(TimoutMS)
+        except:
+            pass
+        command_ = getSelector(Selector)
+        command_["timeout"] = timeout_
+        if len(str(command_)) > 1:
+            windowScope = pywinauto.Application()
+            try:
+                print("Command ->", command_)
+                command_ = windowScope.connect(**command_)
+                windowScope.top_window().set_focus()
+                # windowScope.top_window().print_control_identifiers()
+            except Exception as e:
+                SetVar(var_, False)
+                PrintException()
+                raise Exception(e)
+
+        else:
+            raise Exception("No Selector")
         SetVar(var_, True)
     except Exception as e:
+        PrintException()
         SetVar(var_, False)
         raise Exception(e)
 
@@ -374,6 +378,41 @@ if module == "SendKeys":
         control = create_control(selector, ancestor)
         control.SetFocus()
         control.SendKeys(Text)
+        SetVar(var_, True)
+    except Exception as e:
+        PrintException()
+        SetVar(var_, False)
+        raise e
+
+if module == "Wheel":
+    Selector = GetParams("Selector")
+    times = GetParams("times")
+    type_ = GetParams("type")
+    var_ = GetParams("result")
+    timeout_ = 30
+
+    try:
+        try:
+            selector = eval(Selector)
+        except Exception as ex:
+            PrintException()
+
+        if not times:
+            times = 1
+        else:
+            times = int(times)
+
+        if "mozilla" in selector["parent"]["cls"].lower() or "chrome" in selector["parent"]["cls"].lower():
+            className = selector["children"][0]["cls"]
+        else:
+            className = selector["parent"]["cls"]
+        ancestor = auto.WindowControl(ClassName=className)
+        control = create_control(selector, ancestor)
+        control.SetFocus()
+        if type_ == "up":
+            control.WheelUp(wheelTimes=times)
+        else:
+            control.WheelDown(wheelTimes=times)
         SetVar(var_, True)
     except Exception as e:
         PrintException()

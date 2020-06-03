@@ -11,6 +11,15 @@ This module can be used with "Desktop Recorder"
   </li>  
 </ul>  
 
+## Commands
+<ul id="commands_readme">
+    <li>Click</li>
+    <li>Get Text</li>
+    <li>Set Text</li>
+    <li>Combobox</li>
+    <li>Wait object</li>
+</ul>
+
 ![alt text](https://raw.githubusercontent.com/rocketbot-cl/WindowsControl/master/example/recorder.png)
 
 <h2>Dependencies</h2>

@@ -170,7 +170,7 @@ if module == "WindowScope":
             except Exception as e:
                 SetVar(var_, False)
                 PrintException()
-                raise Exception(e)
+                raise e
 
         else:
             raise Exception("No Selector")
@@ -178,7 +178,6 @@ if module == "WindowScope":
     except Exception as e:
         PrintException()
         SetVar(var_, False)
-        raise Exception(e)
 
 if module == "GetValue":
     Selector = GetParams("Selector")

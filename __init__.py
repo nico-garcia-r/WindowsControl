@@ -80,23 +80,23 @@ def getSelector(Selector):
 
 def create_control(select, ancestor):
     # class_name = select["parent"]["cls"]
-    if len(select["children"]) > 1:
+    if len(select["children"]) > 1 and "idx" in select["children"][-1]:
         parent = select["children"][-2]
         has_parent = True
+        position_child = select["children"][-1]["idx"]
     else:
         parent = select["children"][-1]
         has_parent = False
     parent_control = None
-    position_child = select["children"][-1]["idx"]
     automation_id = None
     name = None
+
     if "ctrlid" in parent:
         automation_id = parent["ctrlid"]
     if "title" in parent:
         name = parent["title"]
 
     if automation_id and name:
-
         parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], AutomationId=automation_id, Name=name)
     elif automation_id:
         parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], AutomationId=automation_id)

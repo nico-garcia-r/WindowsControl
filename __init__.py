@@ -376,6 +376,7 @@ if module == "SendKeys":
         ancestor = auto.WindowControl(ClassName=className)
         control = create_control(selector, ancestor)
         control.SetFocus()
+        sleep(1)
         control.SendKeys(Text)
         SetVar(var_, True)
     except Exception as e:

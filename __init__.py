@@ -64,27 +64,29 @@ def getSelector(Selector):
 
         print(tmp)
         if "handle_" in tmp and len(tmp) == 1:
+            print("Only Handle connection")
             command_["handle"] = tmp["handle_"]
         else:
             if "app" in tmp and len(str(tmp["app"])) > 0:
                 command_["path"] = tmp["app"]
             if "title" in tmp and len(str(tmp["title"])) > 0:
-                command_["title"] = tmp["title"]
+                command_["Name"] = tmp["title"]
             if "ctrlid" in tmp and len(str(tmp["ctrlid"])) > 0:
-                command_["control_id"] = (int(tmp["ctrlid"]) if tmp["ctrlid"].isdigit() else tmp["ctrlid"])
+                command_["AutomationId"] = (int(tmp["ctrlid"]) if tmp["ctrlid"].isdigit() else tmp["ctrlid"])
             if "cls" in tmp and len(str(tmp["cls"])) > 0:
-                command_["class_name"] = tmp["cls"]
+                command_["ClassName"] = tmp["cls"]
             if "idx" in tmp and len(str(tmp["idx"])) > 0:
                 command_["ctrl_index"] = int(tmp["idx"]) - 1
     except Exception as e:
         PrintException()
         raise Exception("Error on Selector XML or JSON :" + str(e))
-    print("command \n", command_)
+    print("command", command_)
     return command_
 
 
-def create_control(select, ancestor):
+def create_control(select):
     # class_name = select["parent"]["cls"]
+    arguments = {}
     if len(select["children"]) > 1 and "idx" in select["children"][-1]:
         parent = select["children"][-2]
         has_parent = True
@@ -92,21 +94,15 @@ def create_control(select, ancestor):
     else:
         parent = select["children"][-1]
         has_parent = False
-    parent_control = None
-    automation_id = None
-    name = None
 
     if "ctrlid" in parent:
-        automation_id = parent["ctrlid"]
+        arguments["AutomationId"] = parent["ctrlid"]
     if "title" in parent:
-        name = parent["title"]
+        arguments["Name"] = parent["title"]
 
-    if automation_id and name:
-        parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], AutomationId=automation_id, Name=name)
-    elif automation_id:
-        parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], AutomationId=automation_id)
-    elif name:
-        parent_control = ancestor.Control(ControlTypeName=parent["ctrltype"], Name=name)
+    arguments["ControlTypeName"] = parent["ctrltype"]
+
+    parent_control = windowScope.Control(**arguments)
 
     if not has_parent:
         return parent_control
@@ -164,13 +160,11 @@ if module == "WindowScope":
         except:
             pass
         command_ = getSelector(Selector)
-        command_["timeout"] = timeout_
+        auto.SetGlobalSearchTimeout(float(timeout_))
         if len(str(command_)) > 1:
-            windowScope = pywinauto.Application()
+            windowScope = auto.WindowControl(**command_)
             try:
-                print("Command ->", command_)
-                command_ = windowScope.connect(**command_)
-                windowScope.top_window().set_focus()
+                windowScope.SetFocus()
                 # windowScope.top_window().print_control_identifiers()
             except Exception as e:
                 SetVar(var_, False)
@@ -180,7 +174,9 @@ if module == "WindowScope":
         else:
             raise Exception("No Selector")
         SetVar(var_, True)
+        auto.SetGlobalSearchTimeout(float(10))
     except Exception as e:
+        auto.SetGlobalSearchTimeout(float(10))
         PrintException()
         SetVar(var_, False)
 
@@ -196,8 +192,7 @@ if module == "GetValue":
         selector = eval(Selector)
 
         className = selector["parent"]["cls"]
-        ancestor = auto.WindowControl(ClassName=className)
-        control = create_control(selector, ancestor)
+        control = create_control(selector)
         control.SetFocus()
         try:
             if control.ControlTypeName == "DataItemControl":
@@ -230,8 +225,7 @@ if module == "SetValue":
         className = selector["children"][0]["cls"]
     else:
         className = selector["parent"]["cls"]
-    ancestor = auto.WindowControl(ClassName=className)
-    control = create_control(selector, ancestor)
+    control = create_control(selector)
     control.SetFocus()
     if not clean:
         try:
@@ -261,8 +255,8 @@ if module == "SelectItem":
         Item = int(Item)
 
     className = selector["parent"]["cls"]
-    ancestor = auto.WindowControl(ClassName=className)
-    control = create_control(selector, ancestor)
+    control = create_control(selector)
+    control.SetFocus()
 
     control.GetValuePattern().SetValue(Item)
     try:
@@ -304,18 +298,21 @@ if module == "Click":
 
         if len(str(Selector)) > 1:
             try:
+                parentSelector = {}
                 if "cls" in selector["parent"]:
                     if "mozilla" in selector["parent"]["cls"].lower() or "chrome" in selector["parent"]["cls"].lower():
-                        className = selector["children"][0]["cls"]
+                        parentSelector["ClassName"] = selector["children"][0]["cls"]
                     else:
-                        className = selector["parent"]["cls"]
+                        parentSelector["ClassName"] = selector["parent"]["cls"]
 
-                    ancestor = auto.WindowControl(ClassName=className)
-                elif "name" in selector["parent"]:
-                    name = selector["parent"]["name"]
-                    ancestor = auto.WindowControl(Name=name)
+                if "name" in selector["parent"]:
+                    parentSelector["Name"] =  selector["parent"]["name"]
 
-                control = create_control(selector, ancestor)
+                if "handle" in selector["parent"]:
+                    parentSelector = {"Handle": selector["parent"]["handle"]}
+
+                control = create_control(selector)
+                control.SetFocus()
 
                 if ClickType != "CLICK_DOUBLE":
                     if MouseButton == "BTN_LEFT":
@@ -349,21 +346,22 @@ if module == "waitObject":
         PrintException()
 
     try:
-        auto.SetGlobalSearchTimeout(int(timeout_))
+        auto.SetGlobalSearchTimeout(float(timeout_))
         className = selector["parent"]["cls"]
-        ancestor = auto.WindowControl(ClassName=className)
-        control = create_control(selector, ancestor)
+        control = create_control(selector)
+        control.SetFocus()
 
         if control:
             result_ = True
 
-        auto.SetGlobalSearchTimeout(30)
+
         if var_:
             SetVar(var_, result_)
+            auto.SetGlobalSearchTimeout(float(10))
     except Exception as e:
         SetVar(var_, result_)
+        auto.SetGlobalSearchTimeout(float(10))
         PrintException()
-        raise e
 
 if module == "SendKeys":
     Selector = GetParams("Selector")
@@ -381,8 +379,7 @@ if module == "SendKeys":
             className = selector["children"][0]["cls"]
         else:
             className = selector["parent"]["cls"]
-        ancestor = auto.WindowControl(ClassName=className)
-        control = create_control(selector, ancestor)
+        control = create_control(selector)
         control.SetFocus()
         sleep(1)
         control.SendKeys(Text)
@@ -414,8 +411,7 @@ if module == "Wheel":
             className = selector["children"][0]["cls"]
         else:
             className = selector["parent"]["cls"]
-        ancestor = auto.WindowControl(ClassName=className)
-        control = create_control(selector, ancestor)
+        control = create_control(selector)
         control.SetFocus()
         if type_ == "up":
             control.WheelUp(wheelTimes=times)
@@ -436,8 +432,7 @@ if module == "ExtractTable":
         selector = eval(Selector)
 
         className = selector["parent"]["cls"]
-        ancestor = auto.WindowControl(ClassName=className)
-        control = create_control(selector, ancestor)
+        control = create_control(selector)
         control.SetFocus()
         if control.ControlTypeName == "TableControl":
             currentValue = []

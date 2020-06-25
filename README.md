@@ -17,8 +17,14 @@ This module can be used with "Desktop Recorder"
     <li>Get Text</li>
     <li>Set Text</li>
     <li>Combobox</li>
+    <li>Extract Table</li>
     <li>Wait object</li>
 </ul>
+
+## Updates
+
+### 24-Jun-2020
+- Extract Table: Rocketbot can now get all cells from a table object
 
 ![alt text](https://raw.githubusercontent.com/rocketbot-cl/WindowsControl/master/example/recorder.png)
 

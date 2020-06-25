@@ -61,16 +61,21 @@ def getSelector(Selector):
             tmp = json.loads(Selector)
         else:
             tmp = Selector
-        if "app" in tmp and len(str(tmp["app"])) > 0:
-            command_["path"] = tmp["app"]
-        if "title" in tmp and len(str(tmp["title"])) > 0:
-            command_["title"] = tmp["title"]
-        if "ctrlid" in tmp and len(str(tmp["ctrlid"])) > 0:
-            command_["control_id"] = (int(tmp["ctrlid"]) if tmp["ctrlid"].isdigit() else tmp["ctrlid"])
-        if "cls" in tmp and len(str(tmp["cls"])) > 0:
-            command_["class_name"] = tmp["cls"]
-        if "idx" in tmp and len(str(tmp["idx"])) > 0:
-            command_["ctrl_index"] = int(tmp["idx"]) - 1
+
+        print(tmp)
+        if "handle_" in tmp and len(tmp) == 1:
+            command_["handle"] = tmp["handle_"]
+        else:
+            if "app" in tmp and len(str(tmp["app"])) > 0:
+                command_["path"] = tmp["app"]
+            if "title" in tmp and len(str(tmp["title"])) > 0:
+                command_["title"] = tmp["title"]
+            if "ctrlid" in tmp and len(str(tmp["ctrlid"])) > 0:
+                command_["control_id"] = (int(tmp["ctrlid"]) if tmp["ctrlid"].isdigit() else tmp["ctrlid"])
+            if "cls" in tmp and len(str(tmp["cls"])) > 0:
+                command_["class_name"] = tmp["cls"]
+            if "idx" in tmp and len(str(tmp["idx"])) > 0:
+                command_["ctrl_index"] = int(tmp["idx"]) - 1
     except Exception as e:
         PrintException()
         raise Exception("Error on Selector XML or JSON :" + str(e))
@@ -195,7 +200,10 @@ if module == "GetValue":
         control = create_control(selector, ancestor)
         control.SetFocus()
         try:
-            currentValue = control.GetPattern(10002).Value
+            if control.ControlTypeName == "DataItemControl":
+                currentValue = control.GetLegacyIAccessiblePattern().Value
+            else:
+                currentValue = control.GetPattern(10002).Value
         except:
             currentValue = control.GetWindowText()
         if currentValue is None:
@@ -417,4 +425,32 @@ if module == "Wheel":
     except Exception as e:
         PrintException()
         SetVar(var_, False)
+        raise e
+
+if module == "ExtractTable":
+    Selector = GetParams("Selector")
+    var_ = GetParams("result")
+    timeout_ = 30
+    try:
+
+        selector = eval(Selector)
+
+        className = selector["parent"]["cls"]
+        ancestor = auto.WindowControl(ClassName=className)
+        control = create_control(selector, ancestor)
+        control.SetFocus()
+        if control.ControlTypeName == "TableControl":
+            currentValue = []
+            for row in control.GetChildren():
+                rows = []
+                for cell in row.GetChildren():
+                    rows.append(cell.GetLegacyIAccessiblePattern().Value)
+
+                currentValue.append(rows)
+            SetVar(var_, currentValue)
+        else:
+            raise Exception("Not Table Object")
+
+    except Exception as e:
+        PrintException()
         raise e

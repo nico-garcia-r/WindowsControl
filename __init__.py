@@ -193,7 +193,7 @@ if module == "GetValue":
 
         className = selector["parent"]["cls"]
         control = create_control(selector)
-        control.SetFocus()
+        windowScope.SetFocus()
         try:
             if control.ControlTypeName == "DataItemControl":
                 currentValue = control.GetLegacyIAccessiblePattern().Value
@@ -226,7 +226,7 @@ if module == "SetValue":
     else:
         className = selector["parent"]["cls"]
     control = create_control(selector)
-    control.SetFocus()
+    windowScope.SetFocus()
     if not clean:
         try:
             currentValue = control.GetPattern(10002).Value
@@ -256,7 +256,7 @@ if module == "SelectItem":
 
     className = selector["parent"]["cls"]
     control = create_control(selector)
-    control.SetFocus()
+    windowScope.SetFocus()
 
     control.GetValuePattern().SetValue(Item)
     try:
@@ -298,21 +298,8 @@ if module == "Click":
 
         if len(str(Selector)) > 1:
             try:
-                parentSelector = {}
-                if "cls" in selector["parent"]:
-                    if "mozilla" in selector["parent"]["cls"].lower() or "chrome" in selector["parent"]["cls"].lower():
-                        parentSelector["ClassName"] = selector["children"][0]["cls"]
-                    else:
-                        parentSelector["ClassName"] = selector["parent"]["cls"]
-
-                if "name" in selector["parent"]:
-                    parentSelector["Name"] =  selector["parent"]["name"]
-
-                if "handle" in selector["parent"]:
-                    parentSelector = {"Handle": selector["parent"]["handle"]}
-
                 control = create_control(selector)
-                control.SetFocus()
+                windowScope.SetFocus()
 
                 if ClickType != "CLICK_DOUBLE":
                     if MouseButton == "BTN_LEFT":
@@ -349,7 +336,7 @@ if module == "waitObject":
         auto.SetGlobalSearchTimeout(float(timeout_))
         className = selector["parent"]["cls"]
         control = create_control(selector)
-        control.SetFocus()
+        windowScope.SetFocus()
 
         if control:
             result_ = True
@@ -380,7 +367,7 @@ if module == "SendKeys":
         else:
             className = selector["parent"]["cls"]
         control = create_control(selector)
-        control.SetFocus()
+        windowScope.SetFocus()
         sleep(1)
         control.SendKeys(Text)
         SetVar(var_, True)
@@ -412,7 +399,7 @@ if module == "Wheel":
         else:
             className = selector["parent"]["cls"]
         control = create_control(selector)
-        control.SetFocus()
+        windowScope.SetFocus()
         if type_ == "up":
             control.WheelUp(wheelTimes=times)
         else:
@@ -433,7 +420,7 @@ if module == "ExtractTable":
 
         className = selector["parent"]["cls"]
         control = create_control(selector)
-        control.SetFocus()
+        windowScope.SetFocus()
         if control.ControlTypeName == "TableControl":
             currentValue = []
             for row in control.GetChildren():

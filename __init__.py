@@ -71,8 +71,8 @@ def getSelector(Selector):
                 command_["path"] = tmp["app"]
             if "title" in tmp and len(str(tmp["title"])) > 0:
                 command_["Name"] = tmp["title"]
-            if "ctrlid" in tmp and len(str(tmp["ctrlid"])) > 0:
-                command_["AutomationId"] = (int(tmp["ctrlid"]) if tmp["ctrlid"].isdigit() else tmp["ctrlid"])
+            if "ctrlId" in tmp and len(str(tmp["ctrlId"])) > 0:
+                command_["AutomationId"] = (int(tmp["ctrlId"]) if tmp["ctrlId"].isdigit() else tmp["ctrlId"])
             if "class" in tmp and len(str(tmp["class"])) > 0:
                 command_["ClassName"] = tmp["class"]
             if "idx" in tmp and len(str(tmp["idx"])) > 0:

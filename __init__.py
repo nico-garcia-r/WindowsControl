@@ -73,8 +73,8 @@ def getSelector(Selector):
                 command_["Name"] = tmp["title"]
             if "ctrlid" in tmp and len(str(tmp["ctrlid"])) > 0:
                 command_["AutomationId"] = (int(tmp["ctrlid"]) if tmp["ctrlid"].isdigit() else tmp["ctrlid"])
-            if "cls" in tmp and len(str(tmp["cls"])) > 0:
-                command_["ClassName"] = tmp["cls"]
+            if "class" in tmp and len(str(tmp["class"])) > 0:
+                command_["ClassName"] = tmp["class"]
             if "idx" in tmp and len(str(tmp["idx"])) > 0:
                 command_["ctrl_index"] = int(tmp["idx"]) - 1
     except Exception as e:

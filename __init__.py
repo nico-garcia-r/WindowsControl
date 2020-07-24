@@ -441,6 +441,7 @@ if module == "ExtractTable":
 if module == "GetHandle":
     import win32gui
     result = GetParams("var")
+    filter_ = GetParams("filter")
 
     try:
         handleInfo = []
@@ -450,11 +451,21 @@ if module == "GetHandle":
             global handleInfo
             if win32gui.IsWindowVisible(hwnd):
                 handleInfo.append((hwnd, win32gui.GetWindowText(hwnd)))
-
-
         win32gui.EnumWindows(winEnumHandler, None)
 
-        SetVar(result, handleInfo)
+        handle_info = []
+        for h in handleInfo:
+            if filter_.startswith("*") and filter_.endswith("*") and filter_[1:-1] in h[1]:
+                handle_info.append(h)
+            elif filter_.startswith("*") and h[1].endswith(filter_[1:]):
+                handle_info.append(h)
+            elif filter_.endswith("*") and h[1].startswith(filter_[:-1]):
+                handle_info.append(h)
+            elif not filter_:
+                handle_info.append(h)
+
+
+        SetVar(result, handle_info)
     except Exception as e:
         print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()

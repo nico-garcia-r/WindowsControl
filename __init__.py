@@ -367,9 +367,10 @@ if module == "SendKeys":
         else:
             className = selector["parent"]["cls"]
         control = create_control(selector)
-        windowScope.SetFocus()
+        control.SetFocus()
         sleep(1)
         control.SendKeys(Text)
+        sleep(int(len(Text)/4))
         SetVar(var_, True)
     except Exception as e:
         PrintException()
@@ -434,5 +435,27 @@ if module == "ExtractTable":
             raise Exception("Not Table Object")
 
     except Exception as e:
+        PrintException()
+        raise e
+
+if module == "GetHandle":
+    import win32gui
+    result = GetParams("var")
+
+    try:
+        handleInfo = []
+
+
+        def winEnumHandler(hwnd, ctx):
+            global handleInfo
+            if win32gui.IsWindowVisible(hwnd):
+                handleInfo.append((hwnd, win32gui.GetWindowText(hwnd)))
+
+
+        win32gui.EnumWindows(winEnumHandler, None)
+
+        SetVar(result, handleInfo)
+    except Exception as e:
+        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e

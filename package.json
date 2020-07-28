@@ -464,6 +464,23 @@
             "css": "col-md-6"
           },
           {
+            "type": "checkbox",
+            "placeholder": {
+              "es": "",
+              "en": ""
+            },
+            "title": {
+              "es": "Agregar delay",
+              "en": "Add delay"
+            },
+            "help": {
+              "en": "Check it if the application write slow",
+              "es": "Activar si la aplicación escribe lento"
+            },
+            "id": "delay",
+            "css": "col-md-3"
+          },
+          {
             "type": "input",
             "placeholder": {
               "es": "{resultado}",
@@ -478,7 +495,7 @@
               "es": "Variable donde se almacena el resultado sin {}"
             },
             "id": "result",
-            "css": "col-md-6"
+            "css": "col-md-3"
           }
         ]
       },

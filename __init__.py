@@ -99,6 +99,8 @@ def create_control(select):
         arguments["AutomationId"] = parent["ctrlid"]
     if "title" in parent:
         arguments["Name"] = parent["title"]
+    if "cls" in parent:
+        arguments["ClassName"] = parent["cls"]
 
     arguments["ControlTypeName"] = parent["ctrltype"]
 
@@ -353,6 +355,7 @@ if module == "waitObject":
 if module == "SendKeys":
     Selector = GetParams("Selector")
     var_ = GetParams("result")
+    delay = GetParams("delay")
     Text = GetParams("Text")
     timeout_ = 30
 
@@ -370,7 +373,8 @@ if module == "SendKeys":
         control.SetFocus()
         sleep(1)
         control.SendKeys(Text)
-        sleep(int(len(Text)/4))
+        if delay:
+            sleep(int(len(Text) / 4))
         SetVar(var_, True)
     except Exception as e:
         PrintException()

@@ -19,9 +19,14 @@ This module can be used with "Desktop Recorder"
     <li>Combobox</li>
     <li>Extract Table</li>
     <li>Wait object</li>
+    <li>Get Handle from Open windows</li>
 </ul>
 
 ## Updates
+
+### 30-Jul-2020
+- Get Handle: Now Rocketbot can get all handle from opened windows
+- Fix Wait Object: Improve wait object command, now Rocketbot can wait for disappear object
 
 ### 24-Jun-2020
 - Extract Table: Rocketbot can now get all cells from a table object

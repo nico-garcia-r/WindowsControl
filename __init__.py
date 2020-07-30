@@ -31,6 +31,7 @@ sys.path.append(cur_path)
 
 import pywinauto
 from time import sleep
+import time
 from uiautomation import uiautomation as auto
 import json
 import xml.etree.ElementTree as ET
@@ -51,7 +52,9 @@ module = GetParams("module")
     Resuelvo catpcha tipo reCaptchav2
 """
 global windowScope, ET
-
+ProcessTime = time.perf_counter  #this returns nearly 0 when first call it if python version <= 3.6
+ProcessTime()
+time_delta = 0
 
 def getSelector(Selector):
     command_ = {}
@@ -84,8 +87,10 @@ def getSelector(Selector):
     return command_
 
 
-def create_control(select):
+def create_control(select, timeout=10):
     # class_name = select["parent"]["cls"]
+    global ProcessTime, time_delta
+    start = ProcessTime()
     arguments = {}
     if len(select["children"]) > 1 and "idx" in select["children"][-1]:
         parent = select["children"][-2]
@@ -110,10 +115,12 @@ def create_control(select):
         return parent_control
 
     if parent_control:
-        for i, child in enumerate(parent_control.GetChildren()):
-            if i == position_child:
-                print(child)
-                return child
+        exist_parent = parent_control.Exists(timeout, 1)
+        if exist_parent:
+            time_delta = start + timeout - ProcessTime()
+            for i, child in enumerate(parent_control.GetChildren()):
+                if i == position_child:
+                    return child
 
 
 def getChildren(window, Selector):
@@ -148,12 +155,13 @@ def getChildren(window, Selector):
 if module == "WindowScope":
     windowScope = None
     Selector = GetParams("Selector")
-    TimoutMS = GetParams("TimeoutMs")
+    TimoutMS = GetParams("TimeoutMS")
     var_ = GetParams("result")
     timeout_ = 30
     command_ = ""
     app = None
 
+    result = False
 
     try:
         try:
@@ -162,23 +170,17 @@ if module == "WindowScope":
         except:
             pass
         command_ = getSelector(Selector)
-        auto.SetGlobalSearchTimeout(float(timeout_))
         if len(str(command_)) > 1:
             windowScope = auto.WindowControl(**command_)
-            try:
+
+            result = windowScope.ExistsWindow(timeout_, 1)
+            if result:
                 windowScope.SetFocus()
                 # windowScope.top_window().print_control_identifiers()
-            except Exception as e:
-                SetVar(var_, False)
-                PrintException()
-                raise e
-
         else:
             raise Exception("No Selector")
-        SetVar(var_, True)
-        auto.SetGlobalSearchTimeout(float(10))
+        SetVar(var_, result)
     except Exception as e:
-        auto.SetGlobalSearchTimeout(float(10))
         PrintException()
         SetVar(var_, False)
 
@@ -256,7 +258,6 @@ if module == "SelectItem":
     if str(Item).isnumeric():
         Item = int(Item)
 
-    className = selector["parent"]["cls"]
     control = create_control(selector)
     windowScope.SetFocus()
 
@@ -327,6 +328,7 @@ if module == "Click":
 if module == "waitObject":
     Selector = GetParams("Selector")
     var_ = GetParams("result")
+    type_ = GetParams("type")
     timeout_ = GetParams("TimeoutMS")
     result_ = False
     try:
@@ -335,21 +337,34 @@ if module == "waitObject":
         PrintException()
 
     try:
-        auto.SetGlobalSearchTimeout(float(timeout_))
-        className = selector["parent"]["cls"]
-        control = create_control(selector)
-        windowScope.SetFocus()
 
-        if control:
-            result_ = True
+        if timeout_:
+            timeout_ = float(timeout_)
+        else:
+            timeout_ = float(30)
+        auto.TIME_OUT_SECOND = 10
 
+
+        if type_ == "disappears":
+            control = create_control(selector, 5)
+            if time_delta != 0:
+                timeout_ = timeout_ + time_delta - 5
+            if control:
+                print(control, time_delta)
+                result_ = control.Disappears(timeout_, 1)
+            else:
+                result_ = True
+        else:
+            control = create_control(selector, timeout_)
+            if time_delta != 0:
+                timeout_ = time_delta
+            result_ = control.Exists(timeout_, 1)
 
         if var_:
             SetVar(var_, result_)
-            auto.SetGlobalSearchTimeout(float(10))
+
     except Exception as e:
         SetVar(var_, result_)
-        auto.SetGlobalSearchTimeout(float(10))
         PrintException()
 
 if module == "SendKeys":

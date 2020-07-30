@@ -804,11 +804,38 @@
               "en": "Timeout in Seconds"
             },
             "help": {
-              "en": "Specifies the amount of time to wait for the activity to run before an error is thrown. The default value is 30 seconds.",
-              "es": "Especifica el tiempo de espera para que se ejecute la actividad antes de que se genere un error. El valor predeterminado es 30 segundos."
+              "en": "By default 30 seconds",
+              "es": "Por defecto, 30 segundos"
             },
             "id": "TimeoutMS",
-            "css": "col-md-6"
+            "css": "col-md-4"
+          },
+          {
+            "type": "select",
+            "placeholder": {
+              "es": "-----Select-----",
+              "en": "-----Select-----"
+            },
+            "title": {
+              "es": "Acción a esperar:",
+              "en": "Action"
+            },
+            "options": [
+              {
+                "title": "--Seleccione--",
+                "value": ""
+              },
+              {
+                "title": "Exists",
+                "value": "exists"
+              },
+              {
+                "title": "Disappears",
+                "value": "disappears"
+              }
+            ],
+            "id": "type",
+            "css": "col-md-4"
           },
           {
             "type": "input",
@@ -825,7 +852,7 @@
               "es": "Variable donde se almacena el resultado sin {}"
             },
             "id": "result",
-            "css": "col-md-6"
+            "css": "col-md-4"
           }
         ]
       },

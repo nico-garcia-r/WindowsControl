@@ -20,9 +20,12 @@ This module can be used with "Desktop Recorder"
     <li>Extract Table</li>
     <li>Wait object</li>
     <li>Get Handle from Open windows</li>
+    <li>Read List</li>
 </ul>
 
 ## Updates
+### 11-Aug-2020
+- ReadList: Get all children from ListControl object
 
 ### 30-Jul-2020
 - Get Handle: Now Rocketbot can get all handle from opened windows

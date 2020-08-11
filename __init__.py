@@ -19,7 +19,7 @@ Para obtener la Opcion seleccionada:
 
 
 Para instalar librerias se debe ingresar por terminal a la carpeta "libs"
-    
+
     pip install <package> -t .
 
 """
@@ -52,9 +52,10 @@ module = GetParams("module")
     Resuelvo catpcha tipo reCaptchav2
 """
 global windowScope, ET
-ProcessTime = time.perf_counter  #this returns nearly 0 when first call it if python version <= 3.6
+ProcessTime = time.perf_counter  # this returns nearly 0 when first call it if python version <= 3.6
 ProcessTime()
 time_delta = 0
+
 
 def getSelector(Selector):
     command_ = {}
@@ -65,7 +66,6 @@ def getSelector(Selector):
         else:
             tmp = Selector
 
-        print(tmp)
         if "handle_" in tmp and len(tmp) == 1:
             print("Only Handle connection")
             command_["handle"] = tmp["handle_"]
@@ -92,6 +92,15 @@ def create_control(select, timeout=10):
     global ProcessTime, time_delta
     start = ProcessTime()
     arguments = {}
+    new_scope = None
+    if len(select["children"]) > 1 and select["children"][0]["ctrltype"] == "WindowControl":
+        s = select["children"][0]
+        s["class"] = select["children"][0]["cls"]
+        del s["idx"]
+        selector_win = getSelector(select["children"][0])
+        new_scope = windowScope.WindowControl(**selector_win)
+        del select["children"][0]
+
     if len(select["children"]) > 1 and "idx" in select["children"][-1]:
         parent = select["children"][-2]
         has_parent = True
@@ -100,16 +109,18 @@ def create_control(select, timeout=10):
         parent = select["children"][-1]
         has_parent = False
 
-    if "ctrlid" in parent:
+    if "ctrlid" in parent and parent["ctrlid"]:
         arguments["AutomationId"] = parent["ctrlid"]
-    if "title" in parent:
+    if "title" in parent and parent["title"]:
         arguments["Name"] = parent["title"]
-    if "cls" in parent:
+    if "cls" in parent and parent["cls"]:
         arguments["ClassName"] = parent["cls"]
 
     arguments["ControlTypeName"] = parent["ctrltype"]
-
-    parent_control = windowScope.Control(**arguments)
+    if new_scope:
+        parent_control = new_scope.Control(**arguments)
+    else:
+        parent_control = windowScope.Control(**arguments)
 
     if not has_parent:
         return parent_control
@@ -344,7 +355,6 @@ if module == "waitObject":
             timeout_ = float(30)
         auto.TIME_OUT_SECOND = 10
 
-
         if type_ == "disappears":
             control = create_control(selector, 5)
             if time_delta != 0:
@@ -451,7 +461,7 @@ if module == "ExtractTable":
                 currentValue.append(rows)
             SetVar(var_, currentValue)
         else:
-            raise Exception("Not Table Object")
+            raise Exception("Control type must be TableControl")
 
     except Exception as e:
         PrintException()
@@ -459,6 +469,7 @@ if module == "ExtractTable":
 
 if module == "GetHandle":
     import win32gui
+
     result = GetParams("var")
     filter_ = GetParams("filter")
 
@@ -470,6 +481,8 @@ if module == "GetHandle":
             global handleInfo
             if win32gui.IsWindowVisible(hwnd):
                 handleInfo.append((hwnd, win32gui.GetWindowText(hwnd)))
+
+
         win32gui.EnumWindows(winEnumHandler, None)
 
         handle_info = []
@@ -483,9 +496,47 @@ if module == "GetHandle":
             elif not filter_:
                 handle_info.append(h)
 
-
         SetVar(result, handle_info)
     except Exception as e:
         print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
         PrintException()
         raise e
+
+if module == "ReadList":
+    Selector = GetParams("Selector")
+    var_ = GetParams("result")
+    timeout_ = 30
+    try:
+
+        selector = eval(Selector)
+
+        className = selector["parent"]["cls"]
+        control = create_control(selector)
+        windowScope.SetFocus()
+        if control.ControlTypeName == "ListControl":
+            currentValue = []
+            for row in control.GetChildren():
+                rows = []
+                for cell in row.GetChildren():
+                    rows.append(cell.GetLegacyIAccessiblePattern().Name)
+
+                currentValue.append(rows)
+            SetVar(var_, currentValue)
+        else:
+            raise Exception("Control type must be ListControl")
+
+    except Exception as e:
+        PrintException()
+        raise e
+
+
+
+
+
+
+
+
+
+
+
+

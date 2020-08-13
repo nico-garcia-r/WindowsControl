@@ -29,7 +29,6 @@ base_path = tmp_global_obj["basepath"]
 cur_path = base_path + "modules" + os.sep + "WindowsControl" + os.sep + "libs" + os.sep
 sys.path.append(cur_path)
 
-import pywinauto
 from time import sleep
 import time
 from uiautomation import uiautomation as auto
@@ -87,7 +86,7 @@ def getSelector(Selector):
     return command_
 
 
-def create_control(select, timeout=10):
+def create_control(select, timeout=30, wait=False):
     # class_name = select["parent"]["cls"]
     global ProcessTime, time_delta
     start = ProcessTime()
@@ -95,7 +94,8 @@ def create_control(select, timeout=10):
     new_scope = None
     if len(select["children"]) > 1 and select["children"][0]["ctrltype"] == "WindowControl":
         s = select["children"][0]
-        s["class"] = select["children"][0]["cls"]
+        if "cls" in select["children"][0]:
+            s["class"] = select["children"][0]["cls"]
         del s["idx"]
         selector_win = getSelector(select["children"][0])
         new_scope = windowScope.WindowControl(**selector_win)
@@ -115,8 +115,8 @@ def create_control(select, timeout=10):
         arguments["Name"] = parent["title"]
     if "cls" in parent and parent["cls"]:
         arguments["ClassName"] = parent["cls"]
-
-    arguments["ControlTypeName"] = parent["ctrltype"]
+    if "ctrltype" in parent and parent["ctrltype"]:
+        arguments["ControlTypeName"] = parent["ctrltype"]
     if new_scope:
         parent_control = new_scope.Control(**arguments)
     else:
@@ -126,7 +126,10 @@ def create_control(select, timeout=10):
         return parent_control
 
     if parent_control:
-        exist_parent = parent_control.Exists(timeout, 1)
+        if wait:
+            exist_parent = parent_control.Exists2(timeout, 1)
+        else:
+            exist_parent = parent_control.Exists(timeout, 1)
         if exist_parent:
             time_delta = start + timeout - ProcessTime()
             for i, child in enumerate(parent_control.GetChildren()):
@@ -365,10 +368,10 @@ if module == "waitObject":
             else:
                 result_ = True
         else:
-            control = create_control(selector, timeout_)
+            control = create_control(selector, timeout_, wait=True)
             if time_delta != 0:
                 timeout_ = time_delta
-            result_ = control.Exists(timeout_, 1)
+            result_ = control.Exists2(timeout_, 1)
 
         if var_:
             SetVar(var_, result_)

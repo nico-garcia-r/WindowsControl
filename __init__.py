@@ -118,7 +118,7 @@ def create_control(select, timeout=30, wait=False):
     if "ctrltype" in parent and parent["ctrltype"]:
         arguments["ControlTypeName"] = parent["ctrltype"]
     if new_scope:
-        parent_control = new_scope.Control(**arguments)
+        parent_control = new_scope.Control(** arguments)
     else:
         parent_control = windowScope.Control(**arguments)
 

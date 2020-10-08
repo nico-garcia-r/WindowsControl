@@ -97,7 +97,7 @@ def create_control(select, timeout=30, wait=False):
         if "cls" in select["children"][0]:
             s["class"] = select["children"][0]["cls"]
         del s["idx"]
-        selector_win = getSelector(select["children"][0])
+        selector_win = getSelector(s)
         new_scope = windowScope.WindowControl(**selector_win)
         del select["children"][0]
 
@@ -195,6 +195,7 @@ if module == "WindowScope":
             raise Exception("No Selector")
         SetVar(var_, result)
     except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
         PrintException()
         SetVar(var_, False)
 
@@ -224,6 +225,7 @@ if module == "GetValue":
 
         SetVar(var_, str(currentValue))
     except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -243,20 +245,25 @@ if module == "SetValue":
         className = selector["children"][0]["cls"]
     else:
         className = selector["parent"]["cls"]
-    control = create_control(selector)
-    windowScope.SetFocus()
-    if not clean:
-        try:
-            currentValue = control.GetPattern(10002).Value
-        except:
-            currentValue = control.GetWindowText()
-
-        if currentValue:
-            Text = currentValue + "\r\n" + Text
     try:
-        control.GetPattern(10002).SetValue(Text)
-    except:
-        control.SetWindowText(Text)
+        control = create_control(selector)
+        windowScope.SetFocus()
+        if not clean:
+            try:
+                currentValue = control.GetPattern(10002).Value
+            except:
+                currentValue = control.GetWindowText()
+
+            if currentValue:
+                Text = currentValue + "\r\n" + Text
+        try:
+            control.GetPattern(10002).SetValue(Text)
+        except:
+            control.SetWindowText(Text)
+    except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        PrintException()
+        raise e
 
 if module == "SelectItem":
     Selector = GetParams("Selector")
@@ -269,18 +276,20 @@ if module == "SelectItem":
     except Exception as ex:
         PrintException()
 
-    if str(Item).isnumeric():
-        Item = int(Item)
 
-    control = create_control(selector)
-    windowScope.SetFocus()
-
-    control.GetValuePattern().SetValue(Item)
     try:
+        if str(Item).isnumeric():
+            Item = int(Item)
+
+        control = create_control(selector)
+        windowScope.SetFocus()
+
+        control.GetValuePattern().SetValue(Item)
         SetVar(var_, str(result_))
     except Exception as e:
-        SetVar(var_, False)
-        raise Exception(e)
+        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        PrintException()
+        raise e
 
 if module == "Click":
     timeout_ = 30
@@ -299,7 +308,7 @@ if module == "Click":
     ClickType = GetParams("ClickType")
 
     try:
-
+        # print(Selector, type(json.loads(Selector)))
         selector = eval(Selector)
 
         if not SimulateClick is None:
@@ -532,14 +541,37 @@ if module == "ReadList":
         PrintException()
         raise e
 
+if module == "findChildren":
+    Selector = GetParams("Selector")
+    data = GetParams("data")
+    find_by = GetParams("findBy")
+    result = GetParams("result")
 
+    try:
+        selector = eval(Selector)
 
+        control = create_control(selector)
+        windowScope.SetFocus()
 
+        children = []
+        for i, child in enumerate(control.GetChildren()):
+            if getattr(child, find_by) == data:
+                # {"ctrlid":"NumberPad","cls":"NamedContainerAutomationPeer","title":"Teclado numérico","ctrltype":"GroupControl","idx": 7}
+                child_selector = {}
+                if child.AutomationId:
+                    child_selector["ctrlid"] = child.AutomationId
+                if child.ClassName:
+                    child_selector["cls"] = child.ClassName
+                if child.Name:
+                    child_selector["title"] = child.Name
+                if child.ControlTypeName:
+                    child_selector["ctrltype"] = child.ControlTypeName
+                child_selector["idx"] = i
+                children.append(child_selector)
 
+        SetVar(result, children)
 
-
-
-
-
-
-
+    except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        PrintException()
+        raise e

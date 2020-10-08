@@ -21,6 +21,7 @@ This module can be used with "Desktop Recorder"
     <li>Wait object</li>
     <li>Get Handle from Open windows</li>
     <li>Read List</li>
+    <li>Find child selector by</li>
 </ul>
 
 ## Updates

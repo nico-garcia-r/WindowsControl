@@ -44,7 +44,7 @@ except:
 """
     Obtengo el modulo que fueron invocados
 """
-global module
+# global module
 module = GetParams("module")
 
 """
@@ -90,7 +90,8 @@ def create_control(select, timeout=30, wait=False):
     # class_name = select["parent"]["cls"]
     global ProcessTime, time_delta
     start = ProcessTime()
-    arguments = {}
+
+    # Creating new scope
     new_scope = None
     if len(select["children"]) > 1 and select["children"][0]["ctrltype"] == "WindowControl":
         s = select["children"][0]
@@ -101,28 +102,22 @@ def create_control(select, timeout=30, wait=False):
         new_scope = windowScope.WindowControl(**selector_win)
         del select["children"][0]
 
-    if len(select["children"]) > 1 and "idx" in select["children"][-1]:
-        parent = select["children"][-2]
-        has_parent = True
-        position_child = select["children"][-1]["idx"]
-    else:
-        parent = select["children"][-1]
-        has_parent = False
+    # if len(select["children"]) > 1 and "idx" in select["children"][-1]:
+    #     parent = select["children"][-2]
+    #     has_parent = True
+    #     position_child = select["children"][-1]["idx"]
+    # else:
+    #     parent = select["children"][-1]
+    #     has_parent = False
 
-    if "ctrlid" in parent and parent["ctrlid"]:
-        arguments["AutomationId"] = parent["ctrlid"]
-    if "title" in parent and parent["title"]:
-        arguments["Name"] = parent["title"]
-    if "cls" in parent and parent["cls"]:
-        arguments["ClassName"] = parent["cls"]
-    if "ctrltype" in parent and parent["ctrltype"]:
-        arguments["ControlTypeName"] = parent["ctrltype"]
+    parent = select["children"][0]
+    arguments = get_selectors(parent)
     if new_scope:
         parent_control = new_scope.Control(** arguments)
     else:
         parent_control = windowScope.Control(**arguments)
 
-    if not has_parent:
+    if len(select["children"]) == 0:
         return parent_control
 
     if parent_control:
@@ -132,9 +127,34 @@ def create_control(select, timeout=30, wait=False):
             exist_parent = parent_control.Exists(timeout, 1)
         if exist_parent:
             time_delta = start + timeout - ProcessTime()
-            for i, child in enumerate(parent_control.GetChildren()):
-                if i == position_child:
-                    return child
+            print(select)
+            return find_control_by_index(parent_control, select["children"][1:])
+            # for i, child in enumerate(parent_control.GetChildren()):
+            #     if i == position_child:
+            #         return child
+
+
+def find_control_by_index(parent_control, selectors):
+    for item in selectors:
+        # print(f"Searching by: {get_selectors(item)}")
+        children = parent_control.GetChildren()
+        for i, child in enumerate(children):
+            if i == item["idx"]:
+                parent_control = child
+    return parent_control
+        
+
+def get_selectors(parent):
+    arguments = {}
+    if "ctrlid" in parent and parent["ctrlid"]:
+        arguments["AutomationId"] = parent["ctrlid"]
+    if "title" in parent and parent["title"]:
+        arguments["Name"] = parent["title"]
+    if "cls" in parent and parent["cls"]:
+        arguments["ClassName"] = parent["cls"]
+    if "ctrltype" in parent and parent["ctrltype"]:
+        arguments["ControlTypeName"] = parent["ctrltype"]
+    return arguments
 
 
 def getChildren(window, Selector):
@@ -195,19 +215,20 @@ if module == "WindowScope":
             raise Exception("No Selector")
         SetVar(var_, result)
     except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         SetVar(var_, False)
 
 if module == "GetValue":
     Selector = GetParams("Selector")
     var_ = GetParams("result")
-    parentControl = GetParams("parentControl")
-    control_by = GetParams("controlBy")
+    # parentControl = GetParams("parentControl")
+    # control_by = GetParams("controlBy")
     timeout_ = 30
+
     try:
-        if not control_by:
-            control_by = "ctrlid"
+        # if not control_by:
+        #     control_by = "ctrlid"
         selector = eval(Selector)
 
         className = selector["parent"]["cls"]
@@ -225,7 +246,7 @@ if module == "GetValue":
 
         SetVar(var_, str(currentValue))
     except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -248,20 +269,27 @@ if module == "SetValue":
     try:
         control = create_control(selector)
         windowScope.SetFocus()
+        clean = eval(clean) if clean is not None else False
         if not clean:
             try:
                 currentValue = control.GetPattern(10002).Value
+                print(currentValue, "--------")
             except:
+                print("exception")
                 currentValue = control.GetWindowText()
 
             if currentValue:
-                Text = currentValue + "\r\n" + Text
+                print(currentValue)
+                Text = currentValue + Text
+
         try:
-            control.GetPattern(10002).SetValue(Text)
+            print(dir(control))
+            control.GetPattern(auto.PatternId.ValuePattern).SetValue(Text)
         except:
+            print("-----------")
             control.SetWindowText(Text)
     except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -284,10 +312,12 @@ if module == "SelectItem":
         control = create_control(selector)
         windowScope.SetFocus()
 
-        control.GetValuePattern().SetValue(Item)
+        print(dir(control))
+        control.GetLegacyIAccessiblePattern().SetValue(Item)
+        # control.GetPattern().SetValue(Item)
         SetVar(var_, str(result_))
     except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -510,7 +540,7 @@ if module == "GetHandle":
 
         SetVar(result, handle_info)
     except Exception as e:
-        print("\x1B[" + "31;40mError\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mError\x1B[" + "0m")
         PrintException()
         raise e
 
@@ -572,6 +602,25 @@ if module == "findChildren":
         SetVar(result, children)
 
     except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\u2193\x1B[" + "0m")
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+        PrintException()
+        raise e
+
+if module == "readCheckbox":
+
+    Selector = GetParams("Selector")
+    result = GetParams("result")
+
+    try:
+        control = create_control(selector)
+        windowScope.SetFocus()
+        if control.ControlTypeName != "CheckBoxControl":
+            raise Exception("Object is not CheckBoxControl")
+        default_action = control.GetLegacyIAccessiblePattern().DefaultAction
+        
+        if result:
+            SetVar(result, default_action)
+    except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         raise e

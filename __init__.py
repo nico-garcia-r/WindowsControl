@@ -88,7 +88,7 @@ def getSelector(Selector):
 
 def create_control(select, timeout=30, wait=False):
     # class_name = select["parent"]["cls"]
-    global ProcessTime, time_delta
+    global ProcessTime, time_delta, get_selectors, find_control_by_index
     start = ProcessTime()
 
     # Creating new scope
@@ -493,7 +493,7 @@ if module == "ExtractTable":
         className = selector["parent"]["cls"]
         control = create_control(selector)
         windowScope.SetFocus()
-        if control.ControlTypeName == "TableControl":
+        if control.ControlTypeName in ("TableControl", "PaneControl"):
             currentValue = []
             for row in control.GetChildren():
                 rows = []
@@ -610,16 +610,44 @@ if module == "readCheckbox":
 
     Selector = GetParams("Selector")
     result = GetParams("result")
+    variant = GetParams("variant")
 
     try:
+        selector = eval(Selector)
+        if variant is not None:
+            variant = eval(variant)
+
         control = create_control(selector)
         windowScope.SetFocus()
         if control.ControlTypeName != "CheckBoxControl":
             raise Exception("Object is not CheckBoxControl")
-        default_action = control.GetLegacyIAccessiblePattern().DefaultAction
+
+        if not variant:
+            default_action = control.GetLegacyIAccessiblePattern().DefaultAction
+        else:
+            default_action = control.GetLegacyIAccessiblePattern().Value
         
         if result:
             SetVar(result, default_action)
+    except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+        PrintException()
+        raise e
+
+
+if module == "isEnable":
+    Selector = GetParams("Selector")
+    result = GetParams("result")
+
+    try:
+        selector = eval(Selector)
+        control = create_control(selector)
+        windowScope.SetFocus()
+
+        isEnabled = control.IsEnabled
+        print("result", result, isEnabled)
+        if result:
+            SetVar(result, bool(isEnabled))
     except Exception as e:
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()

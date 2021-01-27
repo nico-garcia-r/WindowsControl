@@ -22,9 +22,15 @@ This module can be used with "Desktop Recorder"
     <li>Get Handle from Open windows</li>
     <li>Read List</li>
     <li>Find child selector by</li>
+    <li>Get checkbox state</li>
+    <li>Object Enabled</li>
 </ul>
 
 ## Updates
+### 27-Ene-2021
+- Get checkbox state: Return string with state of checkbox object
+- Object Enabled: Return True if object is enabled
+
 ### 11-Aug-2020
 - ReadList: Get all children from ListControl object
 

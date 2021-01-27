@@ -75,7 +75,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -224,7 +224,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -289,7 +289,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -388,7 +388,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -487,7 +487,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -569,7 +569,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -674,7 +674,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -739,7 +739,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -844,7 +844,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -974,7 +974,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -1083,7 +1083,7 @@
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -1142,13 +1142,30 @@
             "css": "col-md-12"
           },
           {
+            "type": "checkbox",
+            "placeholder": {
+              "es": "",
+              "en": ""
+            },
+            "title": {
+              "es": "Obtener Valor",
+              "en": "Get Value"
+            },
+            "help": {
+              "en": "check only if default option not working well.",
+              "es": "Marcar solo si la opción por defecto no funciona correctamente"
+            },
+            "id": "variant",
+            "css": "col-md-6"
+          },
+          {
             "type": "input",
             "placeholder": {
               "es": "{resultado}",
               "en": "{result}"
             },
             "title": {
-              "es": "Resutlado",
+              "es": "Resultado",
               "en": "Result"
             },
             "help": {
@@ -1156,13 +1173,78 @@
               "es": "Variable donde se almacena el resultado sin {}"
             },
             "id": "result",
-            "css": "col-md-12"
+            "css": "col-md-6"
           }
         ]
       },
       "video_youtube": "",
       "icon": "data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMnB0IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48bGluZWFyR3JhZGllbnQgaWQ9ImEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMjU2IiB4Mj0iMjU2IiB5MT0iMCIgeTI9IjUxMiI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMmFmNTk4Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDA5ZWZkIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBkPSJtMjU4LjI1NzgxMiAzMTAuMzQ3NjU2IDIyMy45NTcwMzItMjQ1LjgyMDMxMiAyOS41NjY0MDYgMjYuOTM3NS0yNTEuNDcyNjU2IDI3Ni4wMTk1MzEtMTM3LjA4OTg0NC0xMzAuMzIwMzEzIDI3LjU2MjUtMjguOTkyMTg3em0yMzcuOTkyMTg4LTE0My4wOTM3NS0zMS4xOTE0MDYgMzQuMzQzNzVjNC41MjczNDQgMTcuMzg2NzE5IDYuOTQxNDA2IDM1LjYxNzE4OCA2Ljk0MTQwNiA1NC40MDIzNDQgMCAxMTkuMTAxNTYyLTk2Ljg5ODQzOCAyMTYtMjE2IDIxNnMtMjE2LTk2Ljg5ODQzOC0yMTYtMjE2IDk2Ljg5ODQzOC0yMTYgMjE2LTIxNmM1NS4xNzU3ODEgMCAxMDUuNTc0MjE5IDIwLjgwNDY4OCAxNDMuNzk2ODc1IDU0Ljk2ODc1bDI2Ljk2NDg0NC0yOS42OTE0MDZjLTQ3LjAwNzgxMy00Mi4xOTE0MDYtMTA3LjEwOTM3NS02NS4yNzczNDQtMTcwLjc2MTcxOS02NS4yNzczNDQtNjguMzc4OTA2IDAtMTMyLjY2Nzk2OSAyNi42Mjg5MDYtMTgxLjAxOTUzMSA3NC45ODA0NjktNDguMzUxNTYzIDQ4LjM1MTU2Mi03NC45ODA0NjkgMTEyLjY0MDYyNS03NC45ODA0NjkgMTgxLjAxOTUzMXMyNi42Mjg5MDYgMTMyLjY2Nzk2OSA3NC45ODA0NjkgMTgxLjAxOTUzMWM0OC4zNTE1NjIgNDguMzUxNTYzIDExMi42NDA2MjUgNzQuOTgwNDY5IDE4MS4wMTk1MzEgNzQuOTgwNDY5czEzMi42Njc5NjktMjYuNjI4OTA2IDE4MS4wMTk1MzEtNzQuOTgwNDY5YzQ4LjM1MTU2My00OC4zNTE1NjIgNzQuOTgwNDY5LTExMi42NDA2MjUgNzQuOTgwNDY5LTE4MS4wMTk1MzEgMC0zMC43NzM0MzgtNS40MTAxNTYtNjAuNzEwOTM4LTE1Ljc1LTg4Ljc0NjA5NHptMCAwIiBmaWxsPSJ1cmwoI2EpIi8+PC9zdmc+",
-      "module": "findChildren",
+      "module": "readCheckbox",
+      "module_name": "WindowsControl",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": false,
+      "windows": true,
+      "mac": false,
+      "docker": false
+    },
+    {
+      "en": {
+        "title": "Object is enabled",
+        "description": "Return True or False if object is enabled",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Objeto habilitado",
+        "description": "Retorna verdadero o falso si el objeto está habilitado",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+            },
+            "title": {
+              "es": "Selector",
+              "en": "Selector"
+            },
+            "help": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+            },
+            "id": "Selector",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "{resultado}",
+              "en": "{result}"
+            },
+            "title": {
+              "es": "Resultado",
+              "en": "Result"
+            },
+            "help": {
+              "en": "Variable where the result is stored without {}",
+              "es": "Variable donde se almacena el resultado sin {}"
+            },
+            "id": "result",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNCA4aDkuOTVjLS42MDIgMS4yMDctLjk1IDIuNTYzLS45NSA0cy4zNDggMi43OTMuOTUgNGgtOS45NWMtMi4yMDYgMC00LTEuNzk1LTQtNCAwLTIuMjA2IDEuNzk1LTQgNC00eiIgZmlsbD0iIzAwYmNkNCIvPjxwYXRoIGQ9Im0xMyAxMmgtMTNjMCAyLjIwNSAxLjc5NCA0IDQgNGg5Ljk1Yy0uNjAyLTEuMjA3LS45NS0yLjU2Mi0uOTUtNHoiIGZpbGw9IiMwMGE0YjkiLz48cGF0aCBkPSJtMTAgMTJjMCAzLjg1OSAzLjE0IDcgNyA3IDMuODU5IDAgNy0zLjE0IDctNyAwLTMuODU5LTMuMTQtNy03LTctMy44NTkgMC03IDMuMTQtNyA3eiIgZmlsbD0iIzYwN2Q4YiIvPjxwYXRoIGQ9Im0xNCAxMmMwLTEuNjU0IDEuMzQ2LTMgMy0zczMgMS4zNDYgMyAzLTEuMzQ2IDMtMyAzLTMtMS4zNDYtMy0zeiIgZmlsbD0iI2ZhZmFmYSIvPjxwYXRoIGQ9Im0xNyA1Yy0zLjg1OSAwLTcgMy4xNC03IDcgMCAzLjg1OSAzLjE0IDcgNyA3di00Yy0xLjY1NCAwLTMtMS4zNDYtMy0zczEuMzQ2LTMgMy0zeiIgZmlsbD0iIzU0NmQ3OSIvPjxwYXRoIGQ9Im0xNyA5Yy0xLjY1NCAwLTMgMS4zNDYtMyAzczEuMzQ2IDMgMyAzeiIgZmlsbD0iI2RhZGFkYSIvPjwvc3ZnPg==",
+      "module": "isEnable",
       "module_name": "WindowsControl",
       "visible": true,
       "options": false,

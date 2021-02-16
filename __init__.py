@@ -359,13 +359,13 @@ if module == "Click":
 
                 if ClickType != "CLICK_DOUBLE":
                     if MouseButton == "BTN_LEFT":
-                        control.Click(simulateMove=False, waitTime=0.5)
+                        control.Click(simulateMove=simulateclick_, waitTime=0.5)
                     if MouseButton == "BTN_RIGHT":
-                        control.RightClick(simulateMove=False)
+                        control.RightClick(simulateMove=simulateclick_)
                     if MouseButton == "BTN_MIDDLE":
-                        control.MiddleClick(simulateMove=False)
+                        control.MiddleClick(simulateMove=simulateclick_)
                 else:
-                    control.DoubleClick(simulateMove=False, waitTime=0.5)
+                    control.DoubleClick(simulateMove=simulateclick_, waitTime=0.5)
                 result_ = True
             except Exception as e:
                 SetVar(var_, False)

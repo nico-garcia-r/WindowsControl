@@ -356,7 +356,7 @@ if module == "Click":
             try:
                 control = create_control(selector)
                 windowScope.SetFocus()
-
+                
                 if ClickType != "CLICK_DOUBLE":
                     if MouseButton == "BTN_LEFT":
                         control.Click(simulateMove=simulateclick_, waitTime=0.5)
@@ -485,6 +485,8 @@ if module == "Wheel":
 if module == "ExtractTable":
     Selector = GetParams("Selector")
     var_ = GetParams("result")
+    row_index = GetParams("row_index")
+    col_index = GetParams("col_index")
     timeout_ = 30
     try:
 
@@ -501,6 +503,10 @@ if module == "ExtractTable":
                     rows.append(cell.GetLegacyIAccessiblePattern().Value)
 
                 currentValue.append(rows)
+        if row_index:
+            currentValue = currentValue[row_index]
+            if col_index:
+                currentValue = currentValue[col_index]
             SetVar(var_, currentValue)
         else:
             raise Exception("Control type must be TableControl")

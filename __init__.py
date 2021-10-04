@@ -640,12 +640,11 @@ if module == "readCheckbox":
         PrintException()
         raise e
 
+try: 
+    if module == "isEnable":
+        Selector = GetParams("Selector")
+        result = GetParams("result")
 
-if module == "isEnable":
-    Selector = GetParams("Selector")
-    result = GetParams("result")
-
-    try:
         selector = eval(Selector)
         control = create_control(selector)
         windowScope.SetFocus()
@@ -654,7 +653,40 @@ if module == "isEnable":
         print("result", result, isEnabled)
         if result:
             SetVar(result, bool(isEnabled))
-    except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
-        PrintException()
-        raise e
+
+    
+    if module == "DragAndDrop":
+        source_selector = GetParams("source_selector")
+        destination_selector = GetParams("destination_selector")
+        source_coordinates = GetParams("source_coordinates")
+        destination_coordinates = GetParams("destination_coordinates")
+        result = GetParams("result")
+        SetVar(result, True)
+
+        source_control = destination_control = None
+
+        if source_coordinates:
+            x1,y1 = eval(source_coordinates)
+
+        if destination_coordinates:
+            x2,y2 = eval(destination_coordinates)
+
+        if source_selector:
+            source_selector = json.loads(source_selector)
+            source_control = create_control(source_selector)
+            x1, y1 = source_control.MoveCursorToInnerPos(simulateMove=False)
+
+        if destination_selector:
+            destination_selector = json.loads(destination_selector)
+            destination_control = create_control(destination_selector)
+            x2, y2 = destination_control.MoveCursorToInnerPos(simulateMove=False)
+
+
+        # windowScope.SetFocus()
+        auto.DragDrop(x1, y1, x2, y2)
+        SetVar(result, False)
+
+except Exception as e:
+    print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+    PrintException()
+    raise e

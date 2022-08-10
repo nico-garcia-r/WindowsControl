@@ -377,6 +377,39 @@ if module == "Click":
         SetVar(var_, False)
         PrintException()
         raise e
+    
+if module == "Relative_click":
+    Selector = GetParams("Selector")
+    x_coord = int(GetParams("x_coord"))
+    y_coord = int(GetParams("y_coord"))
+
+
+    
+    try:
+        selector = eval(Selector)
+    except Exception as ex:
+        PrintException() 
+        
+        
+        
+    if len(str(Selector)) > 1:
+            try:
+                control = create_control(selector)
+                windowScope.SetFocus()
+
+                # control.MoveCursorToInnerPos(x=x_coord, y=y_coord)
+                x, y = control.MoveCursorToMyCenter()
+                
+                x_coord += x
+                y_coord += y
+                
+                auto.Click(x=x_coord, y=y_coord, waitTime=0.5)
+                
+                
+            except Exception as e:
+                PrintException()
+                raise e    
+
 
 if module == "waitObject":
     Selector = GetParams("Selector")

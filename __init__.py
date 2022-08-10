@@ -397,8 +397,14 @@ if module == "Relative_click":
                 control = create_control(selector)
                 windowScope.SetFocus()
 
-                control.MoveCursorToInnerPos(x=x_coord, y=y_coord)
-                control.Click(x=x_coord, y=y_coord, waitTime=0.5)
+                # control.MoveCursorToInnerPos(x=x_coord, y=y_coord)
+                x, y = control.MoveCursorToMyCenter()
+                
+                x_coord += x
+                y_coord += y
+                
+                auto.Click(x=x_coord, y=y_coord, waitTime=0.5)
+                
                 
             except Exception as e:
                 PrintException()

@@ -1,69 +1,79 @@
-# WindowsControl
+# MS Windows Controls
+  
 Module to control MS Windows application
 
-This module can be used with "Desktop Recorder"
+This module can be used with "Desktop Recorder" 
 
-<ul>
-  <li>
-    <strong>
-      <a href="http://docs.rocketbot.co/?p=1046">Desktop Recorder</a>
-    </strong> 
-  </li>  
-</ul>  
+*Read this in other languages: [English](README.md), [Español](README.es.md).*
 
-## Commands
-<ul id="commands_readme">
-    <li>Click</li>
-    <li>Get Text</li>
-    <li>Set Text</li>
-    <li>Combobox</li>
-    <li>Extract Table</li>
-    <li>Wait object</li>
-    <li>Get Handle from Open windows</li>
-    <li>Read List</li>
-    <li>Find child selector by</li>
-    <li>Get checkbox state</li>
-    <li>Object Enabled</li>
-</ul>
+## How to install this module
+  
+__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
 
-## Updates
-### 27-Ene-2021
-- Get checkbox state: Return string with state of checkbox object
-- Object Enabled: Return True if object is enabled
 
-### 11-Aug-2020
-- ReadList: Get all children from ListControl object
 
-### 30-Jul-2020
-- Get Handle: Now Rocketbot can get all handle from opened windows
-- Fix Wait Object: Improve wait object command, now Rocketbot can wait for disappear object
+## Overview
 
-### 24-Jun-2020
-- Extract Table: Rocketbot can now get all cells from a table object
 
-![alt text](https://raw.githubusercontent.com/rocketbot-cl/WindowsControl/master/example/recorder.png)
+1. WindowScope  
+A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder.
 
-<h2>Dependencies</h2>
+2. Click  
+Clicks a specified UI element.
 
-<ul>
-  <li>
-    <strong>
-      <a href="https://pypi.org/project/uiautomation/">uiautomation</a>
-    </strong> 
-  </li>  
-</ul>  
-<ul>
-  <li>
-    <strong>
-      <a href="https://pypi.org/project/pywinauto/">pywinauto</a>
-    </strong> 
-  </li>  
-</ul>  
+3. Relative click  
+Clicks with coordinates relative to a specified UI element.
 
-<h2>License</h2>
+4. Get Text  
+Extracts a text value from a specified UI element.
 
-<p><a href="http://badges.mit-license.org" rel="nofollow"><img src="https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265" alt="License" data-canonical-src="http://img.shields.io/:license-mit-blue.svg?style=flat-square" style="max-width:100%;"></a></p>
+5. Set Text  
+Enables you to write a string to the Text attribute of a specified UI element.
 
-<ul>
-  <li><strong><a href="http://opensource.org/licenses/mit-license.php" rel="nofollow">MIT license</a></strong></li>
-</ul>  
+6. Send Keys  
+Enables you to write a string to the Text attribute of a specified UI element.
+
+7. ComboBox  
+Selects an item from a combo box or list box.
+
+8. Wheel  
+Simulate mouse wheel.
+
+9. Extract Table  
+Extract cell values of a table from a specified UI element.
+
+10. Wait object  
+Wait for a object on screen
+
+11. Get Handle from Open windows  
+return and array with name and handle tuple from Open Window
+
+12. Read list  
+Extract cell values of a list from a specified UI element.
+
+13. Find child selector by  
+Search all child by any property and return selectors
+
+14. Get CheckBox state  
+Get Default Action State from checkbox
+
+15. Object is enabled  
+Return True or False if object is enabled  
+
+
+
+### Changes
+Thu Jun 11 13:14:37 2020  Merge branch master of https://github.com/rocketbot-cl/WindowsControl
+Tue Feb 25 12:31:14 2020  -
+Thu Jan 9 14:29:50 2020  Merge branch master of https://github.com/rocketbot-cl/WindowsControl
+
+----
+### OS
+
+- windows
+
+
+### License
+  
+![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
+[MIT](http://opensource.org/licenses/mit-license.ph)

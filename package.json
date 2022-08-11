@@ -14,7 +14,7 @@
   "title": {
     "en": "MS Windows Controls",
     "es": "MS Windows Controls",
-    "cn": "MS Windows Controls"
+    "pr": "MS Windows Controls"
   },
   "icon": "data:image/png;base64,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",
   "children": [
@@ -31,6 +31,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Conectar janela",
+        "description": "Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -38,55 +44,74 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Tiempo de espera en segundos antes de que se genere el error",
+              "en": "Wait time in seconds before the error is generated",
+              "pr": "Tempo de espera em segundos antes que o erro seja gerado"
+            },
             "placeholder": {
               "es": "30",
-              "en": "30"
+              "en": "30",
+              "pr": "30"
             },
             "title": {
               "es": "Tiempo de Espera en Segundos",
-              "en": "Timeout in Seconds"
+              "en": "Timeout in Seconds",
+              "pr": "Tempo de espera em Segundos"
             },
             "help": {
               "en": "Specifies the amount of time to wait for the activity to run before an error is thrown. The default value is 30 seconds.",
-              "es": "Especifica el tiempo de espera para que se ejecute la actividad antes de que se genere un error. El valor predeterminado es 30 segundos."
+              "es": "Especifica el tiempo de espera para que se ejecute la actividad antes de que se genere un error. El valor predeterminado es 30 segundos.",
+              "pr": "Especifica o tempo de espera para que a atividade seja executada antes que um erro seja gerado. O valor padrão é 30 segundos."
             },
             "id": "TimeoutMS",
             "css": "col-md-6"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Variable donde se almacenará el resultado",
+              "en": "Variable where the result will be stored",
+              "pr": "Variável onde o resultado será armazenado"
+            },
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -119,6 +144,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Click",
+        "description": "Clica em um elemento UI especificado.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -126,34 +157,44 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
           },
           {
             "type": "select",
+            "description":{
+              "es": "Especifica el tipo de clic del mouse (simple, doble, arriba, abajo) que se usa al simular el evento de clic. Por defecto, se selecciona un solo clic.",
+              "en": "Specifies the type of mouse click (single, double, up, down) used when simulating the click event. By default, a single click is selected.",
+              "pr": "Especifica o tipo de clique do mouse (simples, duplo, para cima, para baixo) usado ao simular o evento de clique. Por padrão, um único clique é selecionado."
+            },
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "CLICK_SIMPLE",
+              "en": "CLICK_SIMPLE",
+              "pr": "CLICK_SIMPLE"
             },
             "title": {
               "es": "Tipo de Click",
-              "en": "Click Type"
+              "en": "Click Type",
+              "pr": "Tipo de Click"
             },
             "options": [
               {
@@ -175,20 +216,28 @@
             ],
             "help": {
               "en": "Specifies the type of mouse click (single, double, up, down) used when simulating the click event. By default, single click is selected.",
-              "es": "Especifica el tipo de clic del mouse (simple, doble, arriba, abajo) que se usa al simular el evento de clic. Por defecto, se selecciona un solo clic."
+              "es": "Especifica el tipo de clic del mouse (simple, doble, arriba, abajo) que se usa al simular el evento de clic. Por defecto, se selecciona un solo clic.",
+              "pr": "Especifica o tipo de click do mouse (simples, duplo, para cima, para baixo) usado ao simular o evento de click. Por padrão, um único click é selecionado."
             },
             "id": "ClickType",
             "css": "col-md-6"
           },
           {
             "type": "select",
+            "description":{
+              "es": "El botón del mouse (izquierdo, derecho, medio) utilizado para la acción de clic. Por defecto, el botón izquierdo del ratón está seleccionado.",
+              "en": "The mouse button (left, right, middle) used for the click action. By default, the left mouse button is selected.",
+              "pr": "O botão do mouse (esquerdo, direito, meio) usado para a ação de clique. Por padrão, o botão esquerdo do mouse está selecionado."
+            },
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "BTN_IZQUIERDO",
+              "en": "BTN_LEFT",
+              "pr": "BTN_IZQUIERDO"
             },
             "title": {
               "es": "Botón de Mouse",
-              "en": "Mouse Button"
+              "en": "Mouse Button",
+              "pr": "Botão do Mouse"
             },
             "options": [
               {
@@ -207,41 +256,58 @@
             ],
             "help": {
               "en": "The mouse button (left, right, middle) used for the click action. By default, the left mouse button is selected.",
-              "es": "El botón del mouse (izquierdo, derecho, medio) utilizado para la acción de clic. Por defecto, el botón izquierdo del ratón está seleccionado."
+              "es": "El botón del mouse (izquierdo, derecho, medio) utilizado para la acción de clic. Por defecto, el botón izquierdo del ratón está seleccionado.",
+              "pr": "O botão do mouse (esquerdo, direito, meio) usado para a ação de clique. Por padrão, o botão esquerdo do mouse está selecionado."
             },
             "id": "MouseButton",
             "css": "col-md-6"
           },
           {
             "type": "checkbox",
+            "description":{
+              "es": "Si se selecciona, simula el clic utilizando la tecnología de la aplicación de destino. Este método de entrada es el más rápido y funciona en segundo plano. De forma predeterminada, esta casilla de verificación no está seleccionada. El método predeterminado es el más lento, no puede funcionar en segundo plano, pero es compatible con todas las aplicaciones de escritorio.",
+              "en": "If selected, it simulates the click by using the technology of the target application. This input method is the fastest and works in the background. By default, this check box is not selected.The default method is the slowest, it cannot work in the background, but it is compatible with all desktop apps.",
+              "pr": "Se selecionado, simula o clique usando a tecnologia do aplicativo de destino. Este método de entrada é o mais rápido e funciona em segundo plano. Por padrão, esta caixa de seleção não está selecionada. O método padrão é o mais lento, não pode funcionar em segundo plano, mas é compatível com todos os aplicativos de desktop."
+            },
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "title": {
               "es": "Simular Click",
-              "en": "Smulate Click"
+              "en": "Smulate Click",
+              "pr": "Simular Click"
             },
             "help": {
               "en": "If selected, it simulates the click by using the technology of the target application. This input method is the fastest and works in the background. By default, this check box is not selected.The default method is the slowest, it cannot work in the background, but it is compatible with all desktop apps.",
-              "es": "Si se selecciona, simula el clic utilizando la tecnología de la aplicación de destino. Este método de entrada es el más rápido y funciona en segundo plano. De forma predeterminada, esta casilla de verificación no está seleccionada. El método predeterminado es el más lento, no puede funcionar en segundo plano, pero es compatible con todas las aplicaciones de escritorio."
+              "es": "Si se selecciona, simula el clic utilizando la tecnología de la aplicación de destino. Este método de entrada es el más rápido y funciona en segundo plano. De forma predeterminada, esta casilla de verificación no está seleccionada. El método predeterminado es el más lento, no puede funcionar en segundo plano, pero es compatible con todas las aplicaciones de escritorio.",
+              "pr": "Se selecionado, simula o clique usando a tecnologia do aplicativo de destino. Este método de entrada é o mais rápido e funciona em segundo plano. Por padrão, esta caixa de seleção não está selecionada. O método padrão é o mais lento, não pode funcionar em segundo plano, mas é compatível com todos os aplicativos de desktop."
             },
             "id": "SimulateClick",
             "css": "col-md-6"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Variable donde se almacenará el resultado",
+              "en": "Variable where the result will be stored",
+              "pr": "Variável onde o resultado será armazenado"
+            },
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -274,6 +340,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Click relativo",
+        "description": "Click com coordenadas relativas a um elemento UI especificado.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -281,49 +353,74 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Coordenada X para donde se moverá relativamente el mouse antes de realizar el click, desde la ubicación del selector.",
+              "en": "X coordinate for where the mouse will move relative to before clicking, from selector ubication",
+              "pr": "Coordenada X para onde o mouse se moverá em relação antes de clicar, a partir do local do seletor."
+            },
             "placeholder": {
               "es": "150",
-              "en": "150"
+              "en": "150",
+              "pr": "150"
             },
             "title": {
               "es": "Coordenada X",
-              "en": "X Coordinate"
+              "en": "X Coordinate",
+              "pr": "Coordenada X"
             },
             "help": {
               "en": "X coordinate for where the mouse will move relative to before clicking.",
-              "es": "Coordenada X para donde se moverá relativamente el mouse antes de realizar el click."
+              "es": "Coordenada X para donde se moverá relativamente el mouse antes de realizar el click.",
+              "pr": "Coordenada X para onde o mouse se moverá em relação antes de clicar"
             },
             "id": "x_coord",
             "css": "col-md-6"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Coordenada Y para donde se moverá relativamente el mouse antes de realizar el click, desde la ubicación del selector.",
+              "en": "Y coordinate for where the mouse will move relative to before clicking, from selector ubication",
+              "pr": "Coordenada Y para onde o mouse se moverá em relação antes de clicar, a partir do local do seletor."
+            },
             "placeholder": {
               "es": "100",
-              "en": "100"
+              "en": "100",
+              "pr": "100"
             },
             "title": {
               "es": "Coordenada Y",
-              "en": "Y Coordinate"
+              "en": "Y Coordinate",
+              "pr": "Coordenada Y"
             },
             "help": {
               "en": "Y coordinate for where the mouse will move relative to before clicking.",
-              "es": "Coordenada Y para donde se moverá relativamente el mouse antes de realizar el click."
+              "es": "Coordenada Y para donde se moverá relativamente el mouse antes de realizar el click.",
+              "pr": "Coordenada Y para onde o mouse se moverá em relação antes de clicar"
             },
             "id": "y_coord",
             "css": "col-md-6"
@@ -352,7 +449,13 @@
       },
       "es": {
         "title": "Obtener Texto",
-        "description": "Extrae un valor de texto de un elemento de IU especificado.",
+        "description": "Extrae un valor de texto de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Obter texto",
+        "description": "Extrai um valor de texto de um elemento UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -363,21 +466,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -385,16 +490,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -423,7 +536,13 @@
       },
       "es": {
         "title": "Enviar Texto",
-        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de IU especificado.",
+        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Enviar Texto",
+        "description": "Permite gravar uma string no atributo Text de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -434,21 +553,24 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-9"
@@ -456,16 +578,24 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "True",
+              "en": "True",
+              "pr": "True"
             },
             "title": {
               "es": "Limpiar",
-              "en": "Clean"
+              "en": "Clean",
+              "pr": "Limpar"
+            },
+            "description": {
+              "es": "Si se selecciona, elimina el texto anterior para escribir uno nuevo. Por defecto, el texto se escribirá en una nueva línea.",
+              "en": "If selected, delete the previous text to write a new one. By default, the text will be written on a new line.",
+              "pr": "Se selecionado, exclui o texto antigo para escrever um novo. Por padrão, o texto será escrito em uma nova linha."
             },
             "help": {
               "en": "If selected, delete the previous text to write a new one. By default, the text will be written on a new line.",
-              "es": "Si se selecciona, elimina el texto anterior para escribir uno nuevo. Por defecto, el texto se escribirá en una nueva línea."
+              "es": "Si se selecciona, elimina el texto anterior para escribir uno nuevo. Por defecto, el texto se escribirá en una nueva línea.",
+              "pr": "Se selecionado, exclui o texto antigo para escrever um novo. Por padrão, o texto será escrito em uma nova linha."
             },
             "id": "Clean",
             "css": "col-md-3"
@@ -474,15 +604,23 @@
             "type": "input",
             "placeholder": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
             },
             "title": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
+            },
+            "description": {
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "en": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto o variable que se vá a escribir en el atributo Text del objeto."
             },
             "help": {
-              "en": "The string or variable that is to be written to the Text attribute of a UI element.",
-              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto."
+              "en": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto o variable que se vá a escribir en el atributo Text del objeto."
             },
             "id": "Text",
             "css": "col-md-6"
@@ -490,16 +628,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -528,7 +674,13 @@
       },
       "es": {
         "title": "Enviar Tecla",
-        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de IU especificado.",
+        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Enviar Tecla",
+        "description": "Permite gravar uma string no atributo Text de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -539,21 +691,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -562,15 +716,23 @@
             "type": "input",
             "placeholder": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
             },
             "title": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
+            },
+            "description": {
+              "en": "The string or variable that is to be written to the Text attribute of a UI element.",
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto ou variável para gravar no atributo Text do objeto."
             },
             "help": {
               "en": "The string or variable that is to be written to the Text attribute of a UI element.",
-              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto."
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto ou variável para gravar no atributo Text do objeto."
             },
             "id": "Text",
             "css": "col-md-6"
@@ -578,16 +740,24 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "title": {
               "es": "Agregar delay",
-              "en": "Add delay"
+              "en": "Add delay",
+              "pr": "Adicionar delay"
+            },
+            "description": {
+              "en": "Check it if the application write slow",
+              "es": "Activar si la aplicación escribe lento",
+              "pr": "Ative se o aplicativo digita lento"
             },
             "help": {
               "en": "Check it if the application write slow",
-              "es": "Activar si la aplicación escribe lento"
+              "es": "Activar si la aplicación escribe lento",
+              "pr": "Ative se o aplicativo digita lento"
             },
             "id": "delay",
             "css": "col-md-3"
@@ -595,16 +765,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-3"
@@ -637,6 +815,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "ComboBox",
+        "description": "Selecione um item de um Seletor ou lista de itens.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -644,21 +828,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -667,15 +853,23 @@
             "type": "input",
             "placeholder": {
               "es": "Item",
-              "en": "Item"
+              "en": "Item",
+              "pr": "Item"
             },
             "title": {
               "es": "Item",
-              "en": "Item"
+              "en": "Item",
+              "pr": "Item"
+            },
+            "description": {
+              "en": "Specifies the item to be selected from the combo or list box.",
+              "es": "Escriba el nombre del item a seleccionar dentro del Selector o Lista.",
+              "pr": "Escreva o nome do item a ser selecionado dentro do Seletor ou Lista."
             },
             "help": {
               "en": "Specifies the item to be selected from the combo or list box.",
-              "es": "Escriba el nombre del item a seleccionar dentro del Selector o Lista."
+              "es": "Escriba el nombre del item a seleccionar dentro del Selector o Lista.",
+              "pr": "Escreva o nome do item a ser selecionado dentro do Seletor ou Lista."
             },
             "id": "Item",
             "css": "col-md-6"
@@ -683,16 +877,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -725,6 +927,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Wheel",
+        "description": "Simule o movimento da roda do mouse",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -732,21 +940,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -755,11 +965,18 @@
             "type": "input",
             "placeholder": {
               "es": "1",
-              "en": "1"
+              "en": "1",
+              "pr": "1"
             },
             "title": {
               "es": "Vueltas",
-              "en": "Times"
+              "en": "Times",
+              "pr": "Voltas"
+            },
+            "description": {
+              "es": "Vueltas que dará la rueda del mouse",
+              "en": "Turns that the mouse wheel will make",
+              "pr": "Voltas que a roda do mouse vai fazer"
             },
             "id": "times",
             "css": "col-md-4"
@@ -768,11 +985,18 @@
             "type": "select",
             "placeholder": {
               "es": "up",
-              "en": "up"
+              "en": "up",
+              "pr": "up"
+            },
+            "description":{
+              "es": "Seleccionar si el movimiento de la rueda será para arriba o abajo.",
+              "en": "Select whether the movement of the wheel will be up or down.",
+              "pr": "Selecione se o movimento da roda será para cima ou para baixo."
             },
             "title": {
               "es": "Up or Down:",
-              "en": "Up or Down"
+              "en": "Up or Down",
+              "pr": "Up or Down"
             },
             "options": [
               {
@@ -794,16 +1018,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-4"
@@ -832,7 +1064,13 @@
       },
       "es": {
         "title": "Extraer tabla",
-        "description": "Extrae el valor de las celdas de una tabla de un elemento de IU especificado.",
+        "description": "Extrae el valor de las celdas de una tabla de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Extrair tabela",
+        "description": "Extrai o valor das células em uma tabela de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -843,21 +1081,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -866,11 +1106,18 @@
             "type": "input",
             "placeholder": {
               "es": "2",
-              "en": "2"
+              "en": "2",
+              "pr": "2"
             },
             "title": {
               "es": "Fila",
-              "en": "Row"
+              "en": "Row",
+              "pr": "Linha"
+            },
+            "description": {
+              "es": "Fila que será extraída",
+              "en": "Row to be extracted",
+              "pr": "Linha a ser extraída"
             },
             "id": "row_index",
             "css": "col-md-3"
@@ -878,12 +1125,19 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "2",
-              "en": "3"
+              "es": "3",
+              "en": "3",
+              "pr": "3"
             },
             "title": {
               "es": "Columna",
-              "en": "Column"
+              "en": "Column",
+              "pr": "Coluna"
+            },
+            "description": {
+              "es": "Columna que será extraída",
+              "en": "Column to be extraxted",
+              "pr": "Coluna a ser extraída"
             },
             "id": "col_index",
             "css": "col-md-3"
@@ -891,16 +1145,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -933,6 +1195,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Esperar objeto",
+        "description": "Aguarde até que um objeto apareça na tela",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -940,11 +1208,18 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Selector a esperar",
+              "en": "Selector to wait",
+              "pr": "Selector para esperar"
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -953,15 +1228,23 @@
             "type": "input",
             "placeholder": {
               "es": "30",
-              "en": "30"
+              "en": "30",
+              "pr": "30"
             },
             "title": {
               "es": "Tiempo de Espera en Segundos",
-              "en": "Timeout in Seconds"
+              "en": "Timeout in Seconds",
+              "pr": "Tempo de espera em segundos"
+            },
+            "description": {
+              "en": "Tiempo de espera máximo para el selector",
+              "es": "Maximum waiting time for the selector",
+              "pr": "Tempo máximo de espera para o selector"
             },
             "help": {
               "en": "By default 30 seconds",
-              "es": "Por defecto, 30 segundos"
+              "es": "Por defecto, 30 segundos",
+              "pr": "Padrão, 30 segundos"
             },
             "id": "TimeoutMS",
             "css": "col-md-4"
@@ -970,11 +1253,18 @@
             "type": "select",
             "placeholder": {
               "es": "-----Select-----",
-              "en": "-----Select-----"
+              "en": "-----Select-----",
+              "pr": "-----Select-----"
             },
             "title": {
               "es": "Acción a esperar:",
-              "en": "Action"
+              "en": "Wait action",
+              "pr": "Ação para esperar:"
+            },
+            "description": {
+              "es": "Acción a esperar",
+              "en": "Wait action",
+              "pr": "Ação para esperar"
             },
             "options": [
               {
@@ -996,16 +1286,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-4"
@@ -1038,6 +1336,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Obter Handle de janelas abertas",
+        "description": "Retorna uma lista com tuplas contendo o nome e o handle das janelas abertas",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -1045,15 +1349,23 @@
             "type": "input",
             "placeholder": {
               "es": "*Block de notas",
-              "en": "*Notepad"
+              "en": "*Notepad",
+              "pr": "*Bloco de notas"
             },
             "title": {
               "es": "Filtro",
-              "en": "Filter"
+              "en": "Filter",
+              "pr": "Filtro"
+            },
+            "description": {
+              "es": "Filtro para buscar el handle",
+              "en": "Filter to search the handle",
+              "pr": "Filtre para encontrar a handle"
             },
             "help": {
               "es": "*nombre: termina con 'nombre', nombre*: empieza con 'nombre', *nombre*: contiene 'nombre'",
-              "en": "*name: termina con 'name', name*: empieza con 'name', *name*: contiene 'name'"
+              "en": "*name: ends with 'name', name*: begins with 'name', *name*: contains 'name'",
+              "pr": "*nome: termina com 'nome', nome*: começa com 'nome', *nome*: contém 'nome'"
             },
             "id": "filter",
             "css": "col-md-12"
@@ -1062,15 +1374,23 @@
             "type": "input",
             "placeholder": {
               "es": "Variable",
-              "en": "Variable"
+              "en": "Variable",
+              "pr": "Variável"
             },
             "title": {
               "es": "Variable",
-              "en": "Variable"
+              "en": "Variable",
+              "pr": "Variável"
+            },
+            "description": {
+              "es": "Variable donde se guardará el handle",
+              "en": "Variable where the handle will be saved",
+              "pr": "Variável onde a habdle será salva"
             },
             "help": {
               "es": "Nombres de variables sin {} ",
-              "en": "Variable name without {} "
+              "en": "Variable name without {} ",
+              "pr": "Nomes de variáveis sem {} "
             },
             "id": "var",
             "css": "col-md-12"
@@ -1090,7 +1410,7 @@
       "mac": true,
       "docker": true
     },
-	{
+	  {
       "en": {
         "title": "Read list",
         "description": "Extract cell values of a list from a specified UI element.",
@@ -1099,7 +1419,13 @@
       },
       "es": {
         "title": "Leer Lista",
-        "description": "Extrae el valor de las celdas de una lista de un elemento de IU especificado.",
+        "description": "Extrae el valor de las celdas de una lista de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Ler Lista",
+        "description": "Extrai o valor das células em uma lista de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -1110,15 +1436,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1126,16 +1460,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1168,6 +1510,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Localizar seletor filho por",
+        "description": "Encontre todos os filhos por alguma propriedade e retorne seus seletores.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -1175,15 +1523,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
-            },
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+          },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1192,11 +1548,18 @@
             "type": "input",
             "placeholder": {
               "es": "labelClass1",
-              "en": "labelClass1"
+              "en": "labelClass1",
+              "pr": "labelClass1"
             },
             "title": {
               "es": "Data a buscar",
-              "en": "Data to find"
+              "en": "Data to find",
+              "pr": "Data para pesquisar"
+            },
+            "description": {
+              "es": "Dato hijo a buscar",
+              "en": "Children data to find",
+              "pr": "Dado filho para pesquisar"
             },
             "id": "data",
             "css": "col-md-6"
@@ -1204,12 +1567,19 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "ctrlid",
+              "en": "ctrlid",
+              "pr": "ctrlid"
             },
             "title": {
               "es": "Buscar por",
-              "en": "Find by"
+              "en": "Find by",
+              "pr": "Procurar"
+            },
+            "description": {
+              "es": "Seleccion de dónde buscar el selector hijo",
+              "en": "Selection of where to look for the child selector",
+              "pr": "Seleção de onde procurar o seletor filho"
             },
             "options": [
               {
@@ -1235,16 +1605,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1273,7 +1651,13 @@
       },
       "es": {
         "title": "Obtener estado de checkbox",
-        "description": "Obtiene el Default Acction de un checkbox.",
+        "description": "Obtiene el Default Action de un checkbox.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Obter status da checkbox",
+        "description": "Obtém a Defail Action de um checkbox",
         "title_options": null,
         "options": null
       },
@@ -1284,15 +1668,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1300,16 +1692,24 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "title": {
               "es": "Obtener Valor",
-              "en": "Get Value"
+              "en": "Get Value",
+              "pr": "Obter valor"
+            },
+            "description": {
+              "en": "Checkbox to check only if default option not working well.",
+              "es": "Checkbox para marcar solo si la opción por defecto no funciona correctamente",
+              "pr": "Checkbox para marcar apenas se a opção padrão não funcionar corretamente"
             },
             "help": {
-              "en": "check only if default option not working well.",
-              "es": "Marcar solo si la opción por defecto no funciona correctamente"
+              "en": "Check only if default option not working well.",
+              "es": "Marcar solo si la opción por defecto no funciona correctamente",
+              "pr": "Verifique apenas se a opção padrão não funcionar corretamente"
             },
             "id": "variant",
             "css": "col-md-6"
@@ -1317,16 +1717,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1359,6 +1767,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Objeto ativado",
+        "description": "Retorna verdadeiro ou falso se o objeto estiver habilitado",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -1366,15 +1780,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1382,16 +1804,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1424,8 +1854,7 @@
         "title_options": null,
         "options": null
       },
-      "pr":
-      {
+      "pr": {
         "title": "Arrastar y soltar",
         "description":  "Arraste e solte um objeto das coordenadas ou do seletor de objetos, origem e destino",
         "title_options": null,
@@ -1448,7 +1877,8 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector de origen",
@@ -1456,15 +1886,15 @@
               "en": "Source Seletor"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "id": "source_selector",
             "css": "col-md-12"
@@ -1473,13 +1903,13 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "title": {
               "es": "Selector de destino",
@@ -1487,9 +1917,9 @@
               "en": "Destination Seletor"
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "id": "destination_selector",
             "css": "col-md-12"
@@ -1498,12 +1928,18 @@
             "type": "input",
             "placeholder": {
               "es": "136,200",
-              "en": "136,200"
+              "en": "136,200",
+              "pr": "136,200"
             },
             "title": {
               "es": "Coordenada de origen",
               "pr": "Coordenada de origem",
               "en": "Source coordinate"
+            },
+            "description": {
+              "en": "Coordinates from where it will be dragged",
+              "es": "Coordenadas desde donde se arrastrará",
+              "pr": "Coordenadas de onde será arrastado"
             },
             "id": "source_coordinates",
             "css": "col-md-4"
@@ -1512,12 +1948,18 @@
             "type": "input",
             "placeholder": {
               "es": "500,200",
-              "en": "136,200"
+              "en": "500,200",
+              "pr": "500,200"
             },
             "title": {
               "es": "Coordenada de destino",
               "pr": "Coordenada de destino",
               "en": "Destination coordinate"
+            },
+            "description": {
+              "en": "Coordinates to where it will be dragged",
+              "es": "Coordenadas hasta donde se arrastrará",
+              "pr": "Coordenadas para onde será arrastado"
             },
             "id": "destination_coordinates",
             "css": "col-md-4"
@@ -1526,15 +1968,23 @@
             "type": "input",
             "placeholder": {
               "es": "resultado",
-              "en": "result"
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "remove_vars": true,
             "id": "result",
@@ -1568,8 +2018,7 @@
         "title_options": null,
         "options": null
       },
-      "pr":
-      {
+      "pr": {
         "title": "Obter posição",
         "description":  "Retorna as coordenadas do elemento especificado. Você pode escolher mover o mouse para a posição",
         "title_options": null,
@@ -1582,7 +2031,8 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector de origen",
@@ -1590,15 +2040,14 @@
               "en": "Source Seletor"
             },
             "description": {
-              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Propriedade de texto usada para localizar um elemento de IU específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "id": "source_selector",
             "css": "col-md-12"
@@ -1607,7 +2056,8 @@
             "type": "checkbox",
             "placeholder": {
               "es": "True",
-              "en": "True"
+              "en": "True",
+              "pr": "True"
             },
             "title": {
               "es": "Mover mouse a la posición",
@@ -1618,7 +2068,6 @@
               "es": "Se se marca esta casilla, el mouse se moverá al centro del elemento antes de retornar la posición",
               "en": "If this checkbox is checked, the mouse will move to the center of the element before returning the position",
               "pr": "Se esta caixa estiver marcada, o mouse se moverá para o centro do elemento antes de retornar a posição"
-            
             },
             "id": "move",
             "css": "col-md-6"
@@ -1627,15 +2076,23 @@
             "type": "input",
             "placeholder": {
               "es": "resultado",
-              "en": "result"
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "remove_vars": true,
             "id": "result",

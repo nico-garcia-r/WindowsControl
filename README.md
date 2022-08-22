@@ -1,10 +1,10 @@
 # MS Windows Controls
   
-Module to control MS Windows application
+Module to control MS Windows applications
 
-This module can be used with "Desktop Recorder" 
+This module can be used with "Desktop Recorder"
 
-*Read this in other languages: [English](README.md), [Español](README.es.md).*
+*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).*
 
 ## How to install this module
   
@@ -58,7 +58,13 @@ Search all child by any property and return selectors
 Get Default Action State from checkbox
 
 15. Object is enabled  
-Return True or False if object is enabled  
+Return True or False if object is enabled
+
+16. Drag and Drop  
+Drag and drop an object from coordinates or the object selector, both source and destination
+
+17. Get Position  
+Returns the coordinates of the specified element. You can choose to move the mouse to the position  
 
 
 
@@ -72,6 +78,7 @@ Thu Jan 9 14:29:50 2020  Merge branch master of https://github.com/rocketbot-cl/
 
 - windows
 
+### Dependencies
 
 ### License
   

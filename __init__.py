@@ -377,6 +377,39 @@ if module == "Click":
         SetVar(var_, False)
         PrintException()
         raise e
+    
+if module == "Relative_click":
+    Selector = GetParams("Selector")
+    x_coord = int(GetParams("x_coord"))
+    y_coord = int(GetParams("y_coord"))
+
+
+    
+    try:
+        selector = eval(Selector)
+    except Exception as ex:
+        PrintException() 
+        
+        
+        
+    if len(str(Selector)) > 1:
+            try:
+                control = create_control(selector)
+                windowScope.SetFocus()
+
+                # control.MoveCursorToInnerPos(x=x_coord, y=y_coord)
+                x, y = control.MoveCursorToMyCenter()
+                
+                x_coord += x
+                y_coord += y
+                
+                auto.Click(x=x_coord, y=y_coord, waitTime=0.5)
+                
+                
+            except Exception as e:
+                PrintException()
+                raise e    
+
 
 if module == "waitObject":
     Selector = GetParams("Selector")
@@ -640,12 +673,18 @@ if module == "readCheckbox":
         PrintException()
         raise e
 
+try: 
 
-if module == "isEnable":
-    Selector = GetParams("Selector")
-    result = GetParams("result")
+    def get_position(control, ratioX: float = 0.5, ratioY: float = 0.5):
+        rect = control.BoundingRectangle
+        x = rect.left + int(rect.width() * ratioX)
+        y = rect.top + int(rect.height() * ratioY)
+        return x,y
 
-    try:
+    if module == "isEnable":
+        Selector = GetParams("Selector")
+        result = GetParams("result")
+
         selector = eval(Selector)
         control = create_control(selector)
         windowScope.SetFocus()
@@ -654,7 +693,55 @@ if module == "isEnable":
         print("result", result, isEnabled)
         if result:
             SetVar(result, bool(isEnabled))
-    except Exception as e:
-        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
-        PrintException()
-        raise e
+
+    
+    if module == "DragAndDrop":
+        source_selector = GetParams("source_selector")
+        destination_selector = GetParams("destination_selector")
+        source_coordinates = GetParams("source_coordinates")
+        destination_coordinates = GetParams("destination_coordinates")
+        result = GetParams("result")
+        SetVar(result, False)
+
+        source_control = destination_control = None
+
+        if source_coordinates:
+            x1,y1 = eval(source_coordinates)
+
+        if destination_coordinates:
+            x2,y2 = eval(destination_coordinates)
+
+        if source_selector:
+            source_selector = json.loads(source_selector)
+            source_control = create_control(source_selector)
+            x1, y1 = get_position(source_control)
+
+        if destination_selector:
+            destination_selector = json.loads(destination_selector)
+            destination_control = create_control(destination_selector)
+            x2, y2 = get_position(destination_control)
+
+
+        windowScope.SetFocus()
+        auto.DragDrop(x1, y1, x2, y2)
+        SetVar(result, True)
+
+    if module == "GetPosition":
+        selector = GetParams("Selector")
+        move = GetParams("move")
+        result = GetParams("result")
+
+        selector = json.loads("selector")
+        control = create_control(selector)
+        if move and move == "True":
+            x, y  = control.MoveCursorToMyCenter(simulateMove=True)
+        else:
+            x, y = get_position(control)
+
+        
+        SetVar(result, (x,y))
+
+except Exception as e:
+    print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+    PrintException()
+    raise e

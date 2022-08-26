@@ -2,7 +2,7 @@
   "author": "David Cuello - Danilo Toro",
   "description": "Módulo para controlar aplicaciones de MS Windows",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "6.1",
+  "version": "6.2",
   "license": "MIT",
   "homepage": "http://rocketbot.co/",
   "linux": false,
@@ -14,7 +14,7 @@
   "title": {
     "en": "MS Windows Controls",
     "es": "MS Windows Controls",
-    "cn": "MS Windows Controls"
+    "pr": "MS Windows Controls"
   },
   "icon": "data:image/png;base64,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",
   "children": [
@@ -31,6 +31,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Conectar janela",
+        "description": "Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -38,49 +44,74 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Tiempo de espera en segundos antes de que se genere el error",
+              "en": "Wait time in seconds before the error is generated",
+              "pr": "Tempo de espera em segundos antes que o erro seja gerado"
+            },
             "placeholder": {
               "es": "30",
-              "en": "30"
+              "en": "30",
+              "pr": "30"
             },
             "title": {
               "es": "Tiempo de Espera en Segundos",
-              "en": "Timeout in Seconds"
+              "en": "Timeout in Seconds",
+              "pr": "Tempo de espera em Segundos"
             },
             "help": {
               "en": "Specifies the amount of time to wait for the activity to run before an error is thrown. The default value is 30 seconds.",
-              "es": "Especifica el tiempo de espera para que se ejecute la actividad antes de que se genere un error. El valor predeterminado es 30 segundos."
+              "es": "Especifica el tiempo de espera para que se ejecute la actividad antes de que se genere un error. El valor predeterminado es 30 segundos.",
+              "pr": "Especifica o tempo de espera para que a atividade seja executada antes que um erro seja gerado. O valor padrão é 30 segundos."
             },
             "id": "TimeoutMS",
             "css": "col-md-6"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Variable donde se almacenará el resultado",
+              "en": "Variable where the result will be stored",
+              "pr": "Variável onde o resultado será armazenado"
+            },
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -113,6 +144,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Click",
+        "description": "Clica em um elemento UI especificado.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -120,28 +157,44 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
           },
           {
             "type": "select",
+            "description":{
+              "es": "Especifica el tipo de clic del mouse (simple, doble, arriba, abajo) que se usa al simular el evento de clic. Por defecto, se selecciona un solo clic.",
+              "en": "Specifies the type of mouse click (single, double, up, down) used when simulating the click event. By default, a single click is selected.",
+              "pr": "Especifica o tipo de clique do mouse (simples, duplo, para cima, para baixo) usado ao simular o evento de clique. Por padrão, um único clique é selecionado."
+            },
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "CLICK_SIMPLE",
+              "en": "CLICK_SIMPLE",
+              "pr": "CLICK_SIMPLE"
             },
             "title": {
               "es": "Tipo de Click",
-              "en": "Click Type"
+              "en": "Click Type",
+              "pr": "Tipo de Click"
             },
             "options": [
               {
@@ -163,20 +216,28 @@
             ],
             "help": {
               "en": "Specifies the type of mouse click (single, double, up, down) used when simulating the click event. By default, single click is selected.",
-              "es": "Especifica el tipo de clic del mouse (simple, doble, arriba, abajo) que se usa al simular el evento de clic. Por defecto, se selecciona un solo clic."
+              "es": "Especifica el tipo de clic del mouse (simple, doble, arriba, abajo) que se usa al simular el evento de clic. Por defecto, se selecciona un solo clic.",
+              "pr": "Especifica o tipo de click do mouse (simples, duplo, para cima, para baixo) usado ao simular o evento de click. Por padrão, um único click é selecionado."
             },
             "id": "ClickType",
             "css": "col-md-6"
           },
           {
             "type": "select",
+            "description":{
+              "es": "El botón del mouse (izquierdo, derecho, medio) utilizado para la acción de clic. Por defecto, el botón izquierdo del ratón está seleccionado.",
+              "en": "The mouse button (left, right, middle) used for the click action. By default, the left mouse button is selected.",
+              "pr": "O botão do mouse (esquerdo, direito, meio) usado para a ação de clique. Por padrão, o botão esquerdo do mouse está selecionado."
+            },
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "BTN_IZQUIERDO",
+              "en": "BTN_LEFT",
+              "pr": "BTN_IZQUIERDO"
             },
             "title": {
               "es": "Botón de Mouse",
-              "en": "Mouse Button"
+              "en": "Mouse Button",
+              "pr": "Botão do Mouse"
             },
             "options": [
               {
@@ -195,41 +256,58 @@
             ],
             "help": {
               "en": "The mouse button (left, right, middle) used for the click action. By default, the left mouse button is selected.",
-              "es": "El botón del mouse (izquierdo, derecho, medio) utilizado para la acción de clic. Por defecto, el botón izquierdo del ratón está seleccionado."
+              "es": "El botón del mouse (izquierdo, derecho, medio) utilizado para la acción de clic. Por defecto, el botón izquierdo del ratón está seleccionado.",
+              "pr": "O botão do mouse (esquerdo, direito, meio) usado para a ação de clique. Por padrão, o botão esquerdo do mouse está selecionado."
             },
             "id": "MouseButton",
             "css": "col-md-6"
           },
           {
             "type": "checkbox",
+            "description":{
+              "es": "Si se selecciona, simula el clic utilizando la tecnología de la aplicación de destino. Este método de entrada es el más rápido y funciona en segundo plano. De forma predeterminada, esta casilla de verificación no está seleccionada. El método predeterminado es el más lento, no puede funcionar en segundo plano, pero es compatible con todas las aplicaciones de escritorio.",
+              "en": "If selected, it simulates the click by using the technology of the target application. This input method is the fastest and works in the background. By default, this check box is not selected.The default method is the slowest, it cannot work in the background, but it is compatible with all desktop apps.",
+              "pr": "Se selecionado, simula o clique usando a tecnologia do aplicativo de destino. Este método de entrada é o mais rápido e funciona em segundo plano. Por padrão, esta caixa de seleção não está selecionada. O método padrão é o mais lento, não pode funcionar em segundo plano, mas é compatível com todos os aplicativos de desktop."
+            },
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "title": {
               "es": "Simular Click",
-              "en": "Smulate Click"
+              "en": "Smulate Click",
+              "pr": "Simular Click"
             },
             "help": {
               "en": "If selected, it simulates the click by using the technology of the target application. This input method is the fastest and works in the background. By default, this check box is not selected.The default method is the slowest, it cannot work in the background, but it is compatible with all desktop apps.",
-              "es": "Si se selecciona, simula el clic utilizando la tecnología de la aplicación de destino. Este método de entrada es el más rápido y funciona en segundo plano. De forma predeterminada, esta casilla de verificación no está seleccionada. El método predeterminado es el más lento, no puede funcionar en segundo plano, pero es compatible con todas las aplicaciones de escritorio."
+              "es": "Si se selecciona, simula el clic utilizando la tecnología de la aplicación de destino. Este método de entrada es el más rápido y funciona en segundo plano. De forma predeterminada, esta casilla de verificación no está seleccionada. El método predeterminado es el más lento, no puede funcionar en segundo plano, pero es compatible con todas las aplicaciones de escritorio.",
+              "pr": "Se selecionado, simula o clique usando a tecnologia do aplicativo de destino. Este método de entrada é o mais rápido e funciona em segundo plano. Por padrão, esta caixa de seleção não está selecionada. O método padrão é o mais lento, não pode funcionar em segundo plano, mas é compatível com todos os aplicativos de desktop."
             },
             "id": "SimulateClick",
             "css": "col-md-6"
           },
           {
             "type": "input",
+            "description":{
+              "es": "Variable donde se almacenará el resultado",
+              "en": "Variable where the result will be stored",
+              "pr": "Variável onde o resultado será armazenado"
+            },
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -251,14 +329,20 @@
     },
     {
       "en": {
-        "title": "Get Text",
-        "description": "Extracts a text value from a specified UI element.",
+        "title": "Relative click",
+        "description": "Clicks with coordinates relative to a specified UI element.",
         "title_options": null,
         "options": null
       },
       "es": {
-        "title": "Obtener Texto",
-        "description": "Extrae un valor de texto de un elemento de IU especificado.",
+        "title": "Click relativo",
+        "description": "Hace click con coordenadas relativas a un elemento UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Click relativo",
+        "description": "Click com coordenadas relativas a um elemento UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -269,15 +353,136 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "id": "Selector",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "description":{
+              "es": "Coordenada X para donde se moverá relativamente el mouse antes de realizar el click, desde la ubicación del selector.",
+              "en": "X coordinate for where the mouse will move relative to before clicking, from selector ubication",
+              "pr": "Coordenada X para onde o mouse se moverá em relação antes de clicar, a partir do local do seletor."
+            },
+            "placeholder": {
+              "es": "150",
+              "en": "150",
+              "pr": "150"
+            },
+            "title": {
+              "es": "Coordenada X",
+              "en": "X Coordinate",
+              "pr": "Coordenada X"
+            },
+            "help": {
+              "en": "X coordinate for where the mouse will move relative to before clicking.",
+              "es": "Coordenada X para donde se moverá relativamente el mouse antes de realizar el click.",
+              "pr": "Coordenada X para onde o mouse se moverá em relação antes de clicar"
+            },
+            "id": "x_coord",
+            "css": "col-md-6"
+          },
+          {
+            "type": "input",
+            "description":{
+              "es": "Coordenada Y para donde se moverá relativamente el mouse antes de realizar el click, desde la ubicación del selector.",
+              "en": "Y coordinate for where the mouse will move relative to before clicking, from selector ubication",
+              "pr": "Coordenada Y para onde o mouse se moverá em relação antes de clicar, a partir do local do seletor."
+            },
+            "placeholder": {
+              "es": "100",
+              "en": "100",
+              "pr": "100"
+            },
+            "title": {
+              "es": "Coordenada Y",
+              "en": "Y Coordinate",
+              "pr": "Coordenada Y"
+            },
+            "help": {
+              "en": "Y coordinate for where the mouse will move relative to before clicking.",
+              "es": "Coordenada Y para donde se moverá relativamente el mouse antes de realizar el click.",
+              "pr": "Coordenada Y para onde o mouse se moverá em relação antes de clicar"
+            },
+            "id": "y_coord",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6IzIxOTZGMzsiIGQ9Ik00NjUuNDE0LDM2NS4wNzdsLTIzNC42NjctMTkyYy00LjU2NS0zLjcyMy0xMS4yODUtMy4wNC0xNS4wMDgsMS41MjUNCgljLTEuNTUsMS45MDEtMi4zOTgsNC4yNzgtMi40LDYuNzMxdjMyMGMtMC4wMDUsNC43MDMsMy4wNzIsOC44NTUsNy41NzMsMTAuMjE5YzEuMDAzLDAuMzAyLDIuMDQ2LDAuNDUzLDMuMDkzLDAuNDQ4DQoJYzMuNTY4LTAuMDAyLDYuODk4LTEuNzg3LDguODc1LTQuNzU3TDMxNS4wNTcsMzg0aDE0My42MTZjNS44OTEtMC4wMDcsMTAuNjYxLTQuNzg4LDEwLjY1NC0xMC42NzkNCglDNDY5LjMyMywzNzAuMTI2LDQ2Ny44ODcsMzY3LjEsNDY1LjQxNCwzNjUuMDc3eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ1NUE2NDsiIGQ9Ik0yMjQuMDA2LDEwNi42NjdjLTUuODkxLDAtMTAuNjY3LTQuNzc2LTEwLjY2Ny0xMC42NjdWMTAuNjY3QzIxMy4zNCw0Ljc3NiwyMTguMTE1LDAsMjI0LjAwNiwwDQoJCWM1Ljg5MSwwLDEwLjY2Nyw0Ljc3NiwxMC42NjcsMTAuNjY3Vjk2QzIzNC42NzMsMTAxLjg5MSwyMjkuODk3LDEwNi42NjcsMjI0LjAwNiwxMDYuNjY3eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0NTVBNjQ7IiBkPSJNMTM4LjY3MywxOTJINTMuMzRjLTUuODkxLDAtMTAuNjY3LTQuNzc2LTEwLjY2Ny0xMC42NjdjMC01Ljg5MSw0Ljc3Ni0xMC42NjcsMTAuNjY3LTEwLjY2N2g4NS4zMzMNCgkJYzUuODkxLDAsMTAuNjY3LDQuNzc2LDEwLjY2NywxMC42NjdDMTQ5LjM0LDE4Ny4yMjQsMTQ0LjU2NCwxOTIsMTM4LjY3MywxOTJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ1NUE2NDsiIGQ9Ik0zOTQuNjczLDE5MkgzMDkuMzRjLTUuODkxLDAtMTAuNjY3LTQuNzc2LTEwLjY2Ny0xMC42NjdjMC01Ljg5MSw0Ljc3Ni0xMC42NjcsMTAuNjY3LTEwLjY2Nw0KCQloODUuMzMzYzUuODkxLDAsMTAuNjY3LDQuNzc2LDEwLjY2NywxMC42NjdDNDA1LjM0LDE4Ny4yMjQsNDAwLjU2NCwxOTIsMzk0LjY3MywxOTJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ1NUE2NDsiIGQ9Ik0xNjMuNjc2LDEzMS42NjljLTIuODMxLDAuMDA1LTUuNTQ4LTEuMTE1LTcuNTUyLTMuMTE1TDk1Ljc3Miw2OC4yNjcNCgkJYy00LjE4OS00LjE4OS00LjE4OS0xMC45NzksMC0xNS4xNjhjNC4xODktNC4xODksMTAuOTc5LTQuMTg5LDE1LjE2OCwwbDYwLjI2Nyw2MC4zNTJjNC4xNzEsNC4xNiw0LjE3OSwxMC45MTQsMC4wMTksMTUuMDg1DQoJCWMtMi4wMDYsMi4wMTEtNC43MzEsMy4xMzktNy41NzEsMy4xMzRIMTYzLjY3NnoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDU1QTY0OyIgZD0iTTEwMy4zMjQsMzEyLjY4M2MtNS44OTEsMC4wMTEtMTAuNjc1LTQuNzU3LTEwLjY4Ni0xMC42NDhjLTAuMDA1LTIuODQsMS4xMjMtNS41NjUsMy4xMzQtNy41NzENCgkJbDYwLjM1Mi02MC4zNTJjNC4yMzctNC4wOTIsMTAuOTktMy45NzUsMTUuMDgzLDAuMjYyYzMuOTkyLDQuMTM0LDMuOTkyLDEwLjY4NywwLDE0LjgybC02MC4yNjcsNjAuMzczDQoJCUMxMDguOTIsMzExLjU4MywxMDYuMTc3LDMxMi43MDUsMTAzLjMyNCwzMTIuNjgzeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0NTVBNjQ7IiBkPSJNMjg0LjMzNywxMzEuNjY5Yy01Ljg5MSwwLjAxMS0xMC42NzUtNC43NTctMTAuNjg2LTEwLjY0OGMtMC4wMDUtMi44NCwxLjEyMy01LjU2NSwzLjEzNC03LjU3MQ0KCQlsNjAuMjg4LTYwLjM1MmM0LjIzNy00LjA5MywxMC45OS0zLjk3NSwxNS4wODMsMC4yNjJjMy45OTIsNC4xMzQsMy45OTIsMTAuNjg3LDAsMTQuODJsLTYwLjI2Nyw2MC4zNTINCgkJQzI4OS44ODgsMTMwLjU0LDI4Ny4xNzEsMTMxLjY2OSwyODQuMzM3LDEzMS42Njl6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==",
+      "module": "Relative_click",
+      "module_name": "WindowsControl",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": false,
+      "windows": true,
+      "mac": false,
+      "docker": false
+    },
+    {
+      "en": {
+        "title": "Get Text",
+        "description": "Extracts a text value from a specified UI element.",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Obtener Texto",
+        "description": "Extrae un valor de texto de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Obter texto",
+        "description": "Extrai um valor de texto de um elemento UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+            },
+            "title": {
+              "es": "Selector",
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "help": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -285,16 +490,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -323,7 +536,13 @@
       },
       "es": {
         "title": "Enviar Texto",
-        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de IU especificado.",
+        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Enviar Texto",
+        "description": "Permite gravar uma string no atributo Text de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -334,15 +553,24 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-9"
@@ -350,16 +578,24 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "True",
+              "en": "True",
+              "pr": "True"
             },
             "title": {
               "es": "Limpiar",
-              "en": "Clean"
+              "en": "Clean",
+              "pr": "Limpar"
+            },
+            "description": {
+              "es": "Si se selecciona, elimina el texto anterior para escribir uno nuevo. Por defecto, el texto se escribirá en una nueva línea.",
+              "en": "If selected, delete the previous text to write a new one. By default, the text will be written on a new line.",
+              "pr": "Se selecionado, exclui o texto antigo para escrever um novo. Por padrão, o texto será escrito em uma nova linha."
             },
             "help": {
               "en": "If selected, delete the previous text to write a new one. By default, the text will be written on a new line.",
-              "es": "Si se selecciona, elimina el texto anterior para escribir uno nuevo. Por defecto, el texto se escribirá en una nueva línea."
+              "es": "Si se selecciona, elimina el texto anterior para escribir uno nuevo. Por defecto, el texto se escribirá en una nueva línea.",
+              "pr": "Se selecionado, exclui o texto antigo para escrever um novo. Por padrão, o texto será escrito em uma nova linha."
             },
             "id": "Clean",
             "css": "col-md-3"
@@ -368,15 +604,23 @@
             "type": "input",
             "placeholder": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
             },
             "title": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
+            },
+            "description": {
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "en": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto o variable que se vá a escribir en el atributo Text del objeto."
             },
             "help": {
-              "en": "The string or variable that is to be written to the Text attribute of a UI element.",
-              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto."
+              "en": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto o variable que se vá a escribir en el atributo Text del objeto."
             },
             "id": "Text",
             "css": "col-md-6"
@@ -384,16 +628,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -422,7 +674,13 @@
       },
       "es": {
         "title": "Enviar Tecla",
-        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de IU especificado.",
+        "description": "Le permite escribir una cadena en el atributo Texto de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Enviar Tecla",
+        "description": "Permite gravar uma string no atributo Text de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -433,15 +691,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -450,15 +716,23 @@
             "type": "input",
             "placeholder": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
             },
             "title": {
               "es": "Texto",
-              "en": "Text"
+              "en": "Text",
+              "pr": "Texto"
+            },
+            "description": {
+              "en": "The string or variable that is to be written to the Text attribute of a UI element.",
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto ou variável para gravar no atributo Text do objeto."
             },
             "help": {
               "en": "The string or variable that is to be written to the Text attribute of a UI element.",
-              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto."
+              "es": "Texto o variable que se vá a escribir en el atributo Text del objeto.",
+              "pr": "Texto ou variável para gravar no atributo Text do objeto."
             },
             "id": "Text",
             "css": "col-md-6"
@@ -466,16 +740,24 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "title": {
               "es": "Agregar delay",
-              "en": "Add delay"
+              "en": "Add delay",
+              "pr": "Adicionar delay"
+            },
+            "description": {
+              "en": "Check it if the application write slow",
+              "es": "Activar si la aplicación escribe lento",
+              "pr": "Ative se o aplicativo digita lento"
             },
             "help": {
               "en": "Check it if the application write slow",
-              "es": "Activar si la aplicación escribe lento"
+              "es": "Activar si la aplicación escribe lento",
+              "pr": "Ative se o aplicativo digita lento"
             },
             "id": "delay",
             "css": "col-md-3"
@@ -483,16 +765,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-3"
@@ -525,6 +815,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "ComboBox",
+        "description": "Selecione um item de um Seletor ou lista de itens.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -532,15 +828,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -549,15 +853,23 @@
             "type": "input",
             "placeholder": {
               "es": "Item",
-              "en": "Item"
+              "en": "Item",
+              "pr": "Item"
             },
             "title": {
               "es": "Item",
-              "en": "Item"
+              "en": "Item",
+              "pr": "Item"
+            },
+            "description": {
+              "en": "Specifies the item to be selected from the combo or list box.",
+              "es": "Escriba el nombre del item a seleccionar dentro del Selector o Lista.",
+              "pr": "Escreva o nome do item a ser selecionado dentro do Seletor ou Lista."
             },
             "help": {
               "en": "Specifies the item to be selected from the combo or list box.",
-              "es": "Escriba el nombre del item a seleccionar dentro del Selector o Lista."
+              "es": "Escriba el nombre del item a seleccionar dentro del Selector o Lista.",
+              "pr": "Escreva o nome do item a ser selecionado dentro do Seletor ou Lista."
             },
             "id": "Item",
             "css": "col-md-6"
@@ -565,16 +877,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -607,6 +927,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Wheel",
+        "description": "Simule o movimento da roda do mouse",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -614,15 +940,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -631,11 +965,18 @@
             "type": "input",
             "placeholder": {
               "es": "1",
-              "en": "1"
+              "en": "1",
+              "pr": "1"
             },
             "title": {
               "es": "Vueltas",
-              "en": "Times"
+              "en": "Times",
+              "pr": "Voltas"
+            },
+            "description": {
+              "es": "Vueltas que dará la rueda del mouse",
+              "en": "Turns that the mouse wheel will make",
+              "pr": "Voltas que a roda do mouse vai fazer"
             },
             "id": "times",
             "css": "col-md-4"
@@ -644,11 +985,18 @@
             "type": "select",
             "placeholder": {
               "es": "up",
-              "en": "up"
+              "en": "up",
+              "pr": "up"
+            },
+            "description":{
+              "es": "Seleccionar si el movimiento de la rueda será para arriba o abajo.",
+              "en": "Select whether the movement of the wheel will be up or down.",
+              "pr": "Selecione se o movimento da roda será para cima ou para baixo."
             },
             "title": {
               "es": "Up or Down:",
-              "en": "Up or Down"
+              "en": "Up or Down",
+              "pr": "Up or Down"
             },
             "options": [
               {
@@ -670,16 +1018,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-4"
@@ -708,7 +1064,13 @@
       },
       "es": {
         "title": "Extraer tabla",
-        "description": "Extrae el valor de las celdas de una tabla de un elemento de IU especificado.",
+        "description": "Extrae el valor de las celdas de una tabla de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Extrair tabela",
+        "description": "Extrai o valor das células em uma tabela de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -719,15 +1081,23 @@
             "type": "input",
             "placeholder": {
               "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
-              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -736,11 +1106,18 @@
             "type": "input",
             "placeholder": {
               "es": "2",
-              "en": "2"
+              "en": "2",
+              "pr": "2"
             },
             "title": {
               "es": "Fila",
-              "en": "Row"
+              "en": "Row",
+              "pr": "Linha"
+            },
+            "description": {
+              "es": "Fila que será extraída",
+              "en": "Row to be extracted",
+              "pr": "Linha a ser extraída"
             },
             "id": "row_index",
             "css": "col-md-3"
@@ -748,29 +1125,44 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "2",
-              "en": "3"
+              "es": "3",
+              "en": "3",
+              "pr": "3"
             },
             "title": {
               "es": "Columna",
-              "en": "Column"
+              "en": "Column",
+              "pr": "Coluna"
             },
-            "id": "row_index",
+            "description": {
+              "es": "Columna que será extraída",
+              "en": "Column to be extraxted",
+              "pr": "Coluna a ser extraída"
+            },
+            "id": "col_index",
             "css": "col-md-3"
           },
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -803,6 +1195,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Esperar objeto",
+        "description": "Aguarde até que um objeto apareça na tela",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -810,11 +1208,18 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Selector a esperar",
+              "en": "Selector to wait",
+              "pr": "Selector para esperar"
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -823,15 +1228,23 @@
             "type": "input",
             "placeholder": {
               "es": "30",
-              "en": "30"
+              "en": "30",
+              "pr": "30"
             },
             "title": {
               "es": "Tiempo de Espera en Segundos",
-              "en": "Timeout in Seconds"
+              "en": "Timeout in Seconds",
+              "pr": "Tempo de espera em segundos"
+            },
+            "description": {
+              "en": "Tiempo de espera máximo para el selector",
+              "es": "Maximum waiting time for the selector",
+              "pr": "Tempo máximo de espera para o selector"
             },
             "help": {
               "en": "By default 30 seconds",
-              "es": "Por defecto, 30 segundos"
+              "es": "Por defecto, 30 segundos",
+              "pr": "Padrão, 30 segundos"
             },
             "id": "TimeoutMS",
             "css": "col-md-4"
@@ -840,11 +1253,18 @@
             "type": "select",
             "placeholder": {
               "es": "-----Select-----",
-              "en": "-----Select-----"
+              "en": "-----Select-----",
+              "pr": "-----Select-----"
             },
             "title": {
               "es": "Acción a esperar:",
-              "en": "Action"
+              "en": "Wait action",
+              "pr": "Ação para esperar:"
+            },
+            "description": {
+              "es": "Acción a esperar",
+              "en": "Wait action",
+              "pr": "Ação para esperar"
             },
             "options": [
               {
@@ -866,16 +1286,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-4"
@@ -908,6 +1336,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Obter Handle de janelas abertas",
+        "description": "Retorna uma lista com tuplas contendo o nome e o handle das janelas abertas",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -915,15 +1349,23 @@
             "type": "input",
             "placeholder": {
               "es": "*Block de notas",
-              "en": "*Notepad"
+              "en": "*Notepad",
+              "pr": "*Bloco de notas"
             },
             "title": {
               "es": "Filtro",
-              "en": "Filter"
+              "en": "Filter",
+              "pr": "Filtro"
+            },
+            "description": {
+              "es": "Filtro para buscar el handle",
+              "en": "Filter to search the handle",
+              "pr": "Filtre para encontrar a handle"
             },
             "help": {
               "es": "*nombre: termina con 'nombre', nombre*: empieza con 'nombre', *nombre*: contiene 'nombre'",
-              "en": "*name: termina con 'name', name*: empieza con 'name', *name*: contiene 'name'"
+              "en": "*name: ends with 'name', name*: begins with 'name', *name*: contains 'name'",
+              "pr": "*nome: termina com 'nome', nome*: começa com 'nome', *nome*: contém 'nome'"
             },
             "id": "filter",
             "css": "col-md-12"
@@ -932,15 +1374,23 @@
             "type": "input",
             "placeholder": {
               "es": "Variable",
-              "en": "Variable"
+              "en": "Variable",
+              "pr": "Variável"
             },
             "title": {
               "es": "Variable",
-              "en": "Variable"
+              "en": "Variable",
+              "pr": "Variável"
+            },
+            "description": {
+              "es": "Variable donde se guardará el handle",
+              "en": "Variable where the handle will be saved",
+              "pr": "Variável onde a habdle será salva"
             },
             "help": {
               "es": "Nombres de variables sin {} ",
-              "en": "Variable name without {} "
+              "en": "Variable name without {} ",
+              "pr": "Nomes de variáveis sem {} "
             },
             "id": "var",
             "css": "col-md-12"
@@ -960,7 +1410,7 @@
       "mac": true,
       "docker": true
     },
-	{
+	  {
       "en": {
         "title": "Read list",
         "description": "Extract cell values of a list from a specified UI element.",
@@ -969,7 +1419,13 @@
       },
       "es": {
         "title": "Leer Lista",
-        "description": "Extrae el valor de las celdas de una lista de un elemento de IU especificado.",
+        "description": "Extrae el valor de las celdas de una lista de un elemento de UI especificado.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Ler Lista",
+        "description": "Extrai o valor das células em uma lista de um elemento de UI especificado.",
         "title_options": null,
         "options": null
       },
@@ -980,15 +1436,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -996,16 +1460,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1038,6 +1510,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Localizar seletor filho por",
+        "description": "Encontre todos os filhos por alguma propriedade e retorne seus seletores.",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -1045,15 +1523,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
-            },
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+          },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1062,11 +1548,18 @@
             "type": "input",
             "placeholder": {
               "es": "labelClass1",
-              "en": "labelClass1"
+              "en": "labelClass1",
+              "pr": "labelClass1"
             },
             "title": {
               "es": "Data a buscar",
-              "en": "Data to find"
+              "en": "Data to find",
+              "pr": "Data para pesquisar"
+            },
+            "description": {
+              "es": "Dato hijo a buscar",
+              "en": "Children data to find",
+              "pr": "Dado filho para pesquisar"
             },
             "id": "data",
             "css": "col-md-6"
@@ -1074,12 +1567,19 @@
           {
             "type": "select",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "ctrlid",
+              "en": "ctrlid",
+              "pr": "ctrlid"
             },
             "title": {
               "es": "Buscar por",
-              "en": "Find by"
+              "en": "Find by",
+              "pr": "Procurar"
+            },
+            "description": {
+              "es": "Seleccion de dónde buscar el selector hijo",
+              "en": "Selection of where to look for the child selector",
+              "pr": "Seleção de onde procurar o seletor filho"
             },
             "options": [
               {
@@ -1105,16 +1605,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1143,7 +1651,13 @@
       },
       "es": {
         "title": "Obtener estado de checkbox",
-        "description": "Obtiene el Default Acction de un checkbox.",
+        "description": "Obtiene el Default Action de un checkbox.",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Obter status da checkbox",
+        "description": "Obtém a Defail Action de um checkbox",
         "title_options": null,
         "options": null
       },
@@ -1154,15 +1668,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1170,16 +1692,24 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "False",
+              "en": "False",
+              "pr": "False"
             },
             "title": {
               "es": "Obtener Valor",
-              "en": "Get Value"
+              "en": "Get Value",
+              "pr": "Obter valor"
+            },
+            "description": {
+              "en": "Checkbox to check only if default option not working well.",
+              "es": "Checkbox para marcar solo si la opción por defecto no funciona correctamente",
+              "pr": "Checkbox para marcar apenas se a opção padrão não funcionar corretamente"
             },
             "help": {
-              "en": "check only if default option not working well.",
-              "es": "Marcar solo si la opción por defecto no funciona correctamente"
+              "en": "Check only if default option not working well.",
+              "es": "Marcar solo si la opción por defecto no funciona correctamente",
+              "pr": "Verifique apenas se a opção padrão não funcionar corretamente"
             },
             "id": "variant",
             "css": "col-md-6"
@@ -1187,16 +1717,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1229,6 +1767,12 @@
         "title_options": null,
         "options": null
       },
+      "pr": {
+        "title": "Objeto ativado",
+        "description": "Retorna verdadeiro ou falso se o objeto estiver habilitado",
+        "title_options": null,
+        "options": null
+      },
       "form": {
         "css": "modal-lg",
         "inputs": [
@@ -1236,15 +1780,23 @@
             "type": "input",
             "placeholder": {
               "es": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
-              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
+              "en": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}",
+              "pr": "{\"ctrlid\":\"NumberPad\",\"cls\":\"NamedContainerAutomationPeer\",\"title\":\"Teclado numérico\",\"ctrltype\":\"GroupControl\",\"idx\": 7}"
             },
             "title": {
               "es": "Selector",
-              "en": "Selector"
+              "en": "Selector",
+              "pr": "Selector"
+            },
+            "description": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de IU particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -1252,16 +1804,24 @@
           {
             "type": "input",
             "placeholder": {
-              "es": "{resultado}",
-              "en": "{result}"
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
             },
             "title": {
               "es": "Resultado",
-              "en": "Result"
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
             },
             "help": {
               "en": "Variable where the result is stored without {}",
-              "es": "Variable donde se almacena el resultado sin {}"
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
             },
             "id": "result",
             "css": "col-md-6"
@@ -1271,6 +1831,278 @@
       "video_youtube": "",
       "icon": "data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNCA4aDkuOTVjLS42MDIgMS4yMDctLjk1IDIuNTYzLS45NSA0cy4zNDggMi43OTMuOTUgNGgtOS45NWMtMi4yMDYgMC00LTEuNzk1LTQtNCAwLTIuMjA2IDEuNzk1LTQgNC00eiIgZmlsbD0iIzAwYmNkNCIvPjxwYXRoIGQ9Im0xMyAxMmgtMTNjMCAyLjIwNSAxLjc5NCA0IDQgNGg5Ljk1Yy0uNjAyLTEuMjA3LS45NS0yLjU2Mi0uOTUtNHoiIGZpbGw9IiMwMGE0YjkiLz48cGF0aCBkPSJtMTAgMTJjMCAzLjg1OSAzLjE0IDcgNyA3IDMuODU5IDAgNy0zLjE0IDctNyAwLTMuODU5LTMuMTQtNy03LTctMy44NTkgMC03IDMuMTQtNyA3eiIgZmlsbD0iIzYwN2Q4YiIvPjxwYXRoIGQ9Im0xNCAxMmMwLTEuNjU0IDEuMzQ2LTMgMy0zczMgMS4zNDYgMyAzLTEuMzQ2IDMtMyAzLTMtMS4zNDYtMy0zeiIgZmlsbD0iI2ZhZmFmYSIvPjxwYXRoIGQ9Im0xNyA1Yy0zLjg1OSAwLTcgMy4xNC03IDcgMCAzLjg1OSAzLjE0IDcgNyA3di00Yy0xLjY1NCAwLTMtMS4zNDYtMy0zczEuMzQ2LTMgMy0zeiIgZmlsbD0iIzU0NmQ3OSIvPjxwYXRoIGQ9Im0xNyA5Yy0xLjY1NCAwLTMgMS4zNDYtMyAzczEuMzQ2IDMgMyAzeiIgZmlsbD0iI2RhZGFkYSIvPjwvc3ZnPg==",
       "module": "isEnable",
+      "module_name": "WindowsControl",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": false,
+      "windows": true,
+      "mac": false,
+      "docker": false
+    },
+    {
+      "en": {
+        "title": "Drag and Drop",
+        "description": "Drag and drop an object from coordinates or the object selector, both source and destination",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Agarrar y soltar",
+        "description": "Arrastra y suelta un objeto desde coordenadas o el selector del objeto, tanto de origen como destino",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Arrastar y soltar",
+        "description":  "Arraste e solte um objeto das coordenadas ou do seletor de objetos, origem e destino",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "label",
+            "title": {
+              "es": "Puedes seleccionar la combinación de cualquiera de las opciones. Coordenadas y/o selector",
+              "en": "You can select the combination of any of the options. Coordinates and/or selector",
+              "pr": "Você pode selecionar a combinação de qualquer uma das opções. Coordenadas e/ou seletor"
+            },
+            "id": "label",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+            },
+            "title": {
+              "es": "Selector de origen",
+              "pr": "Selector do origen",
+              "en": "Source Seletor"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            
+            },
+            "help": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "id": "source_selector",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "title": {
+              "es": "Selector de destino",
+              "pr": "Selector do destino",
+              "en": "Destination Seletor"
+            },
+            "help": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "id": "destination_selector",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "136,200",
+              "en": "136,200",
+              "pr": "136,200"
+            },
+            "title": {
+              "es": "Coordenada de origen",
+              "pr": "Coordenada de origem",
+              "en": "Source coordinate"
+            },
+            "description": {
+              "en": "Coordinates from where it will be dragged",
+              "es": "Coordenadas desde donde se arrastrará",
+              "pr": "Coordenadas de onde será arrastado"
+            },
+            "id": "source_coordinates",
+            "css": "col-md-4"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "500,200",
+              "en": "500,200",
+              "pr": "500,200"
+            },
+            "title": {
+              "es": "Coordenada de destino",
+              "pr": "Coordenada de destino",
+              "en": "Destination coordinate"
+            },
+            "description": {
+              "en": "Coordinates to where it will be dragged",
+              "es": "Coordenadas hasta donde se arrastrará",
+              "pr": "Coordenadas para onde será arrastado"
+            },
+            "id": "destination_coordinates",
+            "css": "col-md-4"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
+            },
+            "title": {
+              "es": "Resultado",
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
+            },
+            "help": {
+              "en": "Variable where the result is stored without {}",
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
+            },
+            "remove_vars": true,
+            "id": "result",
+            "css": "col-md-4"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/png;base64,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",
+      "module": "DragAndDrop",
+      "module_name": "WindowsControl",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": false,
+      "windows": true,
+      "mac": false,
+      "docker": false
+    },
+    {
+      "en": {
+        "title": "Get Position",
+        "description": "Returns the coordinates of the specified element. You can choose to move the mouse to the position",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Obtener posición",
+        "description": "Devuelve las coordenadas del elemento especificado. Puedes elegir mover el mouse a la posición",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Obter posição",
+        "description":  "Retorna as coordenadas do elemento especificado. Você pode escolher mover o mouse para a posição",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "en": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />",
+              "pr": "<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />"
+            },
+            "title": {
+              "es": "Selector de origen",
+              "pr": "Selector do origen",
+              "en": "Source Seletor"
+            },
+            "description": {
+              "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "help": {
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
+            },
+            "id": "source_selector",
+            "css": "col-md-12"
+          },
+          {
+            "type": "checkbox",
+            "placeholder": {
+              "es": "True",
+              "en": "True",
+              "pr": "True"
+            },
+            "title": {
+              "es": "Mover mouse a la posición",
+              "en": "Move mouse to the position",
+              "pr": "Mover o mouse para a posição"
+            },
+            "description": {
+              "es": "Se se marca esta casilla, el mouse se moverá al centro del elemento antes de retornar la posición",
+              "en": "If this checkbox is checked, the mouse will move to the center of the element before returning the position",
+              "pr": "Se esta caixa estiver marcada, o mouse se moverá para o centro do elemento antes de retornar a posição"
+            },
+            "id": "move",
+            "css": "col-md-6"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "resultado",
+              "en": "result",
+              "pr": "resultado"
+            },
+            "title": {
+              "es": "Resultado",
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "en": "Variable where the result is stored",
+              "es": "Variable donde se almacena el resultado",
+              "pr": "Variável onde o resultado é armazenado"
+            },
+            "help": {
+              "en": "Variable where the result is stored without {}",
+              "es": "Variable donde se almacena el resultado sin {}",
+              "pr": "Variável onde o resultado é armazenado sem {}"
+            },
+            "remove_vars": true,
+            "id": "result",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/png;base64,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",
+      "module": "GetPosition",
       "module_name": "WindowsControl",
       "visible": true,
       "options": false,

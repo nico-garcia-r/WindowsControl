@@ -4,7 +4,7 @@ Module to control MS Windows applications
 
 This module can be used with "Desktop Recorder"
 
-*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).*
+*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).* 
 
 ## How to install this module
   
@@ -18,52 +18,55 @@ __Download__ and __install__ the content in 'modules' folder in Rocketbot path
 1. WindowScope  
 A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder.
 
-2. Click  
+2. Capture the active window  
+Takes a screenshot of the active window and saves it in the specified directory.
+
+3. Click  
 Clicks a specified UI element.
 
-3. Relative click  
+4. Relative click  
 Clicks with coordinates relative to a specified UI element.
 
-4. Get Text  
+5. Get Text  
 Extracts a text value from a specified UI element.
 
-5. Set Text  
+6. Set Text  
 Enables you to write a string to the Text attribute of a specified UI element.
 
-6. Send Keys  
+7. Send Keys  
 Enables you to write a string to the Text attribute of a specified UI element.
 
-7. ComboBox  
+8. ComboBox  
 Selects an item from a combo box or list box.
 
-8. Wheel  
+9. Wheel  
 Simulate mouse wheel.
 
-9. Extract Table  
+10. Extract Table  
 Extract cell values of a table from a specified UI element.
 
-10. Wait object  
+11. Wait object  
 Wait for a object on screen
 
-11. Get Handle from Open windows  
+12. Get Handle from Open windows  
 return and array with name and handle tuple from Open Window
 
-12. Read list  
+13. Read list  
 Extract cell values of a list from a specified UI element.
 
-13. Find child selector by  
+14. Find child selector by  
 Search all child by any property and return selectors
 
-14. Get CheckBox state  
+15. Get CheckBox state  
 Get Default Action State from checkbox
 
-15. Object is enabled  
+16. Object is enabled  
 Return True or False if object is enabled
 
-16. Drag and Drop  
+17. Drag and Drop  
 Drag and drop an object from coordinates or the object selector, both source and destination
 
-17. Get Position  
+18. Get Position  
 Returns the coordinates of the specified element. You can choose to move the mouse to the position  
 
 

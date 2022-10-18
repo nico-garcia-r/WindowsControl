@@ -29,6 +29,8 @@ base_path = tmp_global_obj["basepath"]
 cur_path = base_path + "modules" + os.sep + "WindowsControl" + os.sep + "libs" + os.sep
 sys.path.append(cur_path)
 
+global windowScope, ET
+
 from time import sleep
 import time
 from uiautomation import uiautomation as auto
@@ -50,7 +52,7 @@ module = GetParams("module")
 """
     Resuelvo catpcha tipo reCaptchav2
 """
-global windowScope, ET
+
 ProcessTime = time.perf_counter  # this returns nearly 0 when first call it if python version <= 3.6
 ProcessTime()
 time_delta = 0
@@ -215,6 +217,21 @@ if module == "WindowScope":
             raise Exception("No Selector")
         SetVar(var_, result)
     except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+        PrintException()
+        SetVar(var_, False)
+        
+        
+if module == "Screenshot":
+    Selector = GetParams("Selector")
+    path_ = GetParams("path_screenshot")
+    
+    try:
+        selector = eval(Selector)
+        command_ = getSelector(selector)
+        auto.Control(**command_).CaptureToImage(path_, 7, 0, -14, -7)
+        
+    except:
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         SetVar(var_, False)

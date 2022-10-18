@@ -4,8 +4,9 @@ Module to control MS Windows applications
 
 This module can be used with "Desktop Recorder"
   
-*Read this in other languages: [English](Manual_WindowsControl.md), [Portugues](Manual_WindowsControl.pr.md), [Español](Manual_WindowsControl.es.md).*
-
+*Read this in other languages: [English](Manual_WindowsControl.md), [Portugues](Manual_WindowsControl.pr.md), [Español](Manual_WindowsControl.es.md).* 
+  
+![banner](imgs/Banner_WindowsControl.png)
 ## How to install this module
   
 __Download__ and __install__ the content in 'modules' folder in Rocketbot path  
@@ -22,6 +23,14 @@ A container that enables you to attach to an already opened window and perform m
 |Selector|Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|
 |Timeout in Seconds|Wait time in seconds before the error is generated|30|
 |Result|Variable where the result will be stored|result|
+
+### Capture the active window
+  
+Takes a screenshot of the active window and saves it in the specified directory.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Selector|Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|
+|Screenshot path|Select the name and location where the screenshot will be saved.|C:/Users/Usuario/Desktop/Screenshot|
 
 ### Click
   

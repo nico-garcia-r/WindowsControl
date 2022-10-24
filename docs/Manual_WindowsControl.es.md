@@ -4,6 +4,7 @@ Módulo para controlar aplicaciones de MS Windows
 
 Este módulo puede utilizarse con "Desktop Recorder"
 
+*Read this in other languages: [English](Manual_WindowsControl.md), [Portugues](Manual_WindowsControl.pr.md), [Español](Manual_WindowsControl.es.md).*
   
 ![banner](imgs/Banner_WindowsControl.png)
 ## Como instalar este módulo

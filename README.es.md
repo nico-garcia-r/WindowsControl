@@ -18,8 +18,8 @@ __Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Ro
 1. Conectar Ventana  
 Se conecta a una ventana ya abierta y realizar múltiples acciones dentro de ella. Esta actividad también se genera automáticamente cuando se utiliza la grabadora de escritorio.
 
-2. Captura de pantalla de la ventana activa  
-Realiza una captura de pantalla de la ventana activa y la guarda en el directorio especificado.
+2. Captura de pantalla del elemento 
+Realiza una captura de pantalla del elemento y la guarda en el directorio especificado.
 
 3. Click  
 Hace clic en un elemento UI especificado.

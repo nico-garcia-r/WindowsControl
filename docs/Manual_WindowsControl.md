@@ -24,9 +24,9 @@ A container that enables you to attach to an already opened window and perform m
 |Timeout in Seconds|Wait time in seconds before the error is generated|30|
 |Result|Variable where the result will be stored|result|
 
-### Capture the active window
+### Element screenshot
   
-Takes a screenshot of the active window and saves it in the specified directory.
+Takes a screenshot of the element and saves it in the specified directory.
 |Parameters|Description|example|
 | --- | --- | --- |
 |Selector|Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|

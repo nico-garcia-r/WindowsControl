@@ -18,8 +18,8 @@ __Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot
 1. Conectar janela  
 Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop.
 
-2. Captura a janela ativa  
-Tira uma captura de tela da janela ativa e salva no diretório especificado.
+2. Captura de tela do elemento  
+Tira uma captura de tela do elemento e salva no diretório especificado.
 
 3. Click  
 Clica em um elemento UI especificado.

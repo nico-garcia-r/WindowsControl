@@ -2,7 +2,7 @@
   "author": "David Cuello - Danilo Toro - Nicolas Garcia",
   "description": "Módulo para controlar aplicaciones de MS Windows",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "license": "MIT",
   "homepage": "http://rocketbot.co/",
   "linux": false,
@@ -133,20 +133,20 @@
     },
     {
       "es": {
-        "title": "Captura de pantalla de la ventana activa",
-        "description": "Realiza una captura de pantalla de la ventana activa y la guarda en el directorio especificado.",
+        "title": "Captura de pantalla del elemento",
+        "description": "Realiza una captura de pantalla del elemento y la guarda en el directorio especificado.",
         "title_options": null,
         "options": null
       },
       "en": {
-        "title": "Capture the active window",
-        "description": "Takes a screenshot of the active window and saves it in the specified directory.",
+        "title": "Element screenshot",
+        "description": "Takes a screenshot of the element and saves it in the specified directory.",
         "title_options": null,
         "options": null
       },
       "pr": {
-        "title": "Captura a janela ativa",
-        "description": "Tira uma captura de tela da janela ativa e salva no diretório especificado.",
+        "title": "Captura de tela do elemento",
+        "description": "Tira uma captura de tela do elemento e salva no diretório especificado.",
         "title_options": null,
         "options": null
       },

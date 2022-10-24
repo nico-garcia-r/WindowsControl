@@ -24,9 +24,9 @@ Se conecta a una ventana ya abierta y realiza múltiples acciones dentro de ella
 |Tiempo de Espera en Segundos|Tiempo de espera en segundos antes de que se genere el error|30|
 |Resultado|Variable donde se almacenará el resultado|resultado|
 
-### Captura de pantalla de la ventana activa
+### Captura de pantalla del elemento
   
-Realiza una captura de pantalla de la ventana activa y la guarda en el directorio especificado.
+Realiza una captura de pantalla del elemento y la guarda en el directorio especificado.
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |Selector|Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|

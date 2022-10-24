@@ -18,8 +18,8 @@ __Download__ and __install__ the content in 'modules' folder in Rocketbot path
 1. WindowScope  
 A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder.
 
-2. Capture the active window  
-Takes a screenshot of the active window and saves it in the specified directory.
+2. Element screenshot 
+Takes a screenshot of the element and saves it in the specified directory.
 
 3. Click  
 Clicks a specified UI element.

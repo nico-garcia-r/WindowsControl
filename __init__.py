@@ -227,14 +227,15 @@ if module == "Screenshot":
     path_ = GetParams("path_screenshot")
     
     try:
+        windowScope.SetFocus()
         selector = eval(Selector)
-        command_ = getSelector(selector)
-        auto.Control(**command_).CaptureToImage(path_, 7, 0, -14, -7)
+        control = create_control(selector)
+        control.CaptureToImage(path_)
         
-    except:
+    except Exception as e:
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
-        SetVar(var_, False)
+        raise e
 
 if module == "GetValue":
     Selector = GetParams("Selector")

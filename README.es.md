@@ -4,7 +4,7 @@ Módulo para controlar aplicaciones de MS Windows
 
 Este módulo puede utilizarse con "Desktop Recorder"
 
-*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).*
+*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).* 
 
 ## Como instalar este módulo
   
@@ -18,52 +18,55 @@ __Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Ro
 1. Conectar Ventana  
 Se conecta a una ventana ya abierta y realizar múltiples acciones dentro de ella. Esta actividad también se genera automáticamente cuando se utiliza la grabadora de escritorio.
 
-2. Click  
+2. Captura de pantalla del elemento 
+Realiza una captura de pantalla del elemento y la guarda en el directorio especificado.
+
+3. Click  
 Hace clic en un elemento UI especificado.
 
-3. Click relativo  
+4. Click relativo  
 Hace click con coordenadas relativas a un elemento UI especificado.
 
-4. Obtener Texto  
+5. Obtener Texto  
 Extrae un valor de texto de un elemento de UI especificado.
 
-5. Enviar Texto  
+6. Enviar Texto  
 Le permite escribir una cadena en el atributo Texto de un elemento de UI especificado.
 
-6. Enviar Tecla  
+7. Enviar Tecla  
 Le permite escribir una cadena en el atributo Texto de un elemento de UI especificado.
 
-7. ComboBox  
+8. ComboBox  
 Seleccione un item desde un Selector o lista de items.
 
-8. Wheel  
+9. Wheel  
 Simula movimiento de la rueda del mouse
 
-9. Extraer tabla  
+10. Extraer tabla  
 Extrae el valor de las celdas de una tabla de un elemento de UI especificado.
 
-10. Esperar objeto  
+11. Esperar objeto  
 Espera la aparición de un objeto en pantalla
 
-11. Obtener Handle de ventanas abiertas  
+12. Obtener Handle de ventanas abiertas  
 Devuelve una lista con tuplas que contienen el nombre y handle de las ventanas abiertas
 
-12. Leer Lista  
+13. Leer Lista  
 Extrae el valor de las celdas de una lista de un elemento de UI especificado.
 
-13. Encontrar selector hijo por  
+14. Encontrar selector hijo por  
 Busca todos los hijos por alguna propiedad y retorna sus selectores.
 
-14. Obtener estado de checkbox  
+15. Obtener estado de checkbox  
 Obtiene el Default Action de un checkbox.
 
-15. Objeto habilitado  
+16. Objeto habilitado  
 Retorna verdadero o falso si el objeto está habilitado
 
-16. Agarrar y soltar  
+17. Agarrar y soltar  
 Arrastra y suelta un objeto desde coordenadas o el selector del objeto, tanto de origen como destino
 
-17. Obtener posición  
+18. Obtener posición  
 Devuelve las coordenadas del elemento especificado. Puedes elegir mover el mouse a la posición  
 
 

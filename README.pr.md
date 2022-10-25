@@ -18,52 +18,55 @@ __Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot
 1. Conectar janela  
 Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop.
 
-2. Click  
+2. Captura de tela do elemento  
+Tira uma captura de tela do elemento e salva no diretório especificado.
+
+3. Click  
 Clica em um elemento UI especificado.
 
-3. Click relativo  
+4. Click relativo  
 Click com coordenadas relativas a um elemento UI especificado.
 
-4. Obter texto  
+5. Obter texto  
 Extrai um valor de texto de um elemento UI especificado.
 
-5. Enviar Texto  
+6. Enviar Texto  
 Permite gravar uma string no atributo Text de um elemento de UI especificado.
 
-6. Enviar Tecla  
+7. Enviar Tecla  
 Permite gravar uma string no atributo Text de um elemento de UI especificado.
 
-7. ComboBox  
+8. ComboBox  
 Selecione um item de um Seletor ou lista de itens.
 
-8. Wheel  
+9. Wheel  
 Simule o movimento da roda do mouse
 
-9. Extrair tabela  
+10. Extrair tabela  
 Extrai o valor das células em uma tabela de um elemento de UI especificado.
 
-10. Esperar objeto  
+11. Esperar objeto  
 Aguarde até que um objeto apareça na tela
 
-11. Obter Handle de janelas abertas  
+12. Obter Handle de janelas abertas  
 Retorna uma lista com tuplas contendo o nome e o handle das janelas abertas
 
-12. Ler Lista  
+13. Ler Lista  
 Extrai o valor das células em uma lista de um elemento de UI especificado.
 
-13. Localizar seletor filho por  
+14. Localizar seletor filho por  
 Encontre todos os filhos por alguma propriedade e retorne seus seletores.
 
-14. Obter status da checkbox  
+15. Obter status da checkbox  
 Obtém a Defail Action de um checkbox
 
-15. Objeto ativado  
+16. Objeto ativado  
 Retorna verdadeiro ou falso se o objeto estiver habilitado
 
-16. Arrastar y soltar  
+17. Arrastar y soltar  
 Arraste e solte um objeto das coordenadas ou do seletor de objetos, origem e destino
 
-17. Obter posição  
+18. Obter posição  
 Retorna as coordenadas do elemento especificado. Você pode escolher mover o mouse para a posição  
 
 

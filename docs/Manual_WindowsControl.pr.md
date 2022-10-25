@@ -5,7 +5,8 @@ Módulo para controlar aplicativos MS Windows
 Este módulo pode ser usado com "Desktop Recorder"
   
 *Read this in other languages: [English](Manual_WindowsControl.md), [Portugues](Manual_WindowsControl.pr.md), [Español](Manual_WindowsControl.es.md).*
-
+  
+![banner](imgs/Banner_WindowsControl.png)
 ## Como instalar este módulo
   
 __Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
@@ -22,6 +23,14 @@ Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Es
 |Selector|Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|
 |Tempo de espera em Segundos|Tempo de espera em segundos antes que o erro seja gerado|30|
 |Resultado|Variável onde o resultado será armazenado|resultado|
+
+### Captura de tela do elemento
+  
+Tira uma captura de tela do elemento e salva no diretório especificado.
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Selector|Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|
+|Caminho da captura|Selecione o nome e o local onde a captura de tela será salva.|C:/Users/Usuario/Desktop/Captura|
 
 ### Click
   

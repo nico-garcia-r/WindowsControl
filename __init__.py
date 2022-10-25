@@ -29,6 +29,8 @@ base_path = tmp_global_obj["basepath"]
 cur_path = base_path + "modules" + os.sep + "WindowsControl" + os.sep + "libs" + os.sep
 sys.path.append(cur_path)
 
+global windowScope, ET
+
 from time import sleep
 import time
 from uiautomation import uiautomation as auto
@@ -50,7 +52,7 @@ module = GetParams("module")
 """
     Resuelvo catpcha tipo reCaptchav2
 """
-global windowScope, ET
+
 ProcessTime = time.perf_counter  # this returns nearly 0 when first call it if python version <= 3.6
 ProcessTime()
 time_delta = 0
@@ -218,6 +220,22 @@ if module == "WindowScope":
         print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
         PrintException()
         SetVar(var_, False)
+        
+        
+if module == "Screenshot":
+    Selector = GetParams("Selector")
+    path_ = GetParams("path_screenshot")
+    
+    try:
+        windowScope.SetFocus()
+        selector = eval(Selector)
+        control = create_control(selector)
+        control.CaptureToImage(path_)
+        
+    except Exception as e:
+        print("\x1B[" + "31;40mAn error occurred\x1B[" + "0m")
+        PrintException()
+        raise e
 
 if module == "GetValue":
     Selector = GetParams("Selector")

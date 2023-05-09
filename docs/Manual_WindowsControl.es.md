@@ -2,7 +2,7 @@
   
 Módulo para controlar aplicaciones de MS Windows  
 
-
+*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
   
 ![banner](imgs/Banner_WindowsControl.png)
 ## Como instalar este módulo

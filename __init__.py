@@ -464,8 +464,11 @@ try:
                 control = create_control(selector, timeout_, wait=True)
                 if time_delta != 0:
                     timeout_ = time_delta
-                result_ = control.Exists2(timeout_, 1)
-
+                try:
+                    result_ = control.Exists2(timeout_, 1)
+                except:
+                    result_ = control.Exists(timeout_, 1)
+                    
             if var_:
                 SetVar(var_, result_)
 

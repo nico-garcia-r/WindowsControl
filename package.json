@@ -1,8 +1,13 @@
 {
   "author": "David Cuello - Danilo Toro - Nicolas Garcia",
   "description": "Módulo para controlar aplicaciones de MS Windows",
+  "description_lang": {
+    "en": "Module to control MS Windows applications",
+    "es": "Módulo para controlar aplicaciones de MS Windows",
+    "pr": "Módulo para controlar aplicativos do MS Windows"
+  },
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "6.5.0",
+  "version": "6.5.1",
   "license": "MIT",
   "homepage": "http://rocketbot.com/",
   "linux": false,
@@ -21,19 +26,19 @@
     {
       "en": {
         "title": "WindowScope",
-        "description": "A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder.",
+        "description": "A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder. The application that you want to automate should be opened prior to executing the activity.",
         "title_options": null,
         "options": null
       },
       "es": {
         "title": "Conectar Ventana",
-        "description": "Se conecta a una ventana ya abierta y realizar múltiples acciones dentro de ella. Esta actividad también se genera automáticamente cuando se utiliza la grabadora de escritorio.",
+        "description": "Se conecta a una ventana ya abierta y realizar múltiples acciones dentro de ella. Esta actividad también se genera automáticamente cuando se utiliza la grabadora de escritorio. La aplicación que desea automatizar debe abrirse antes de ejecutar la actividad.",
         "title_options": null,
         "options": null
       },
       "pr": {
         "title": "Conectar janela",
-        "description": "Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop.",
+        "description": "Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop. O aplicativo que você deseja automatizar deve ser aberto antes de executar a atividade.",
         "title_options": null,
         "options": null
       },
@@ -56,12 +61,11 @@
               "es": "Utilizar selector obtenido en DesktopRecorder. Este selector es una propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
               "en": "Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
               "pr": "Use o seletor obtido no DesktopRecorder. Este seletor é a propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON especificando atributos do elemento GUI que você está procurando e de alguns de seus pais."
-            
             },
             "help": {
-              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres.",
-              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.",
-              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais."
+              "es": "Propiedad de texto utilizada para encontrar un elemento de UI particular cuando se ejecuta la actividad. En realidad, es un fragmento XML o JSON que especifica los atributos del elemento de GUI que está buscando y de algunos de sus padres. La aplicación que desea automatizar debe abrirse antes de ejecutar la actividad.",
+              "en": "Text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents. The application you want to automate should be opened prior to executing the activity.",
+              "pr": "Propriedade de texto usada para localizar um elemento de UI específico quando a atividade é executada. Na verdade, é um fragmento XML ou JSON que especifica os atributos do elemento GUI que você está procurando e alguns de seus pais. O aplicativo que você deseja automatizar deve ser aberto antes de executar a atividade."
             },
             "id": "Selector",
             "css": "col-md-12"
@@ -113,6 +117,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -397,6 +402,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -597,6 +603,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -735,6 +742,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -872,6 +880,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-3"
           }
@@ -984,6 +993,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -1125,6 +1135,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-4"
           }
@@ -1252,6 +1263,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -1393,6 +1405,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-4"
           }
@@ -1476,10 +1489,11 @@
               "pr": "Variável onde a habdle será salva"
             },
             "help": {
-              "es": "Nombres de variables sin {} ",
+              "es": "Nombres de variable sin {} ",
               "en": "Variable name without {} ",
-              "pr": "Nomes de variáveis sem {} "
+              "pr": "Nomes de variável sem {} "
             },
+            "remove_vars": true,
             "id": "var",
             "css": "col-md-12"
           }
@@ -1567,6 +1581,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -1712,6 +1727,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -1824,6 +1840,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }
@@ -1911,6 +1928,7 @@
               "es": "Variable donde se almacena el resultado sin {}",
               "pr": "Variável onde o resultado é armazenado sem {}"
             },
+            "remove_vars": true,
             "id": "result",
             "css": "col-md-6"
           }

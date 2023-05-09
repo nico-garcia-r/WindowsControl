@@ -1,23 +1,22 @@
 # MS Windows Controls
   
-Module to control MS Windows applications
+Module to control MS Windows applications  
 
-This module can be used with "Desktop Recorder"
-  
-*Read this in other languages: [English](Manual_WindowsControl.md), [Portugues](Manual_WindowsControl.pr.md), [Español](Manual_WindowsControl.es.md).* 
+*Read this in other languages: [English](Manual_WindowsControl.md), [Português](Manual_WindowsControl.pr.md), [Español](Manual_WindowsControl.es.md)*
   
 ![banner](imgs/Banner_WindowsControl.png)
 ## How to install this module
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
-
+To install the module in Rocketbot Studio, it can be done in two ways:
+1. Manual: __Download__ the .zip file and unzip it in the modules folder. The folder name must be the same as the module and inside it must have the following files and folders: \__init__.py, package.json, docs, example and libs. If you have the application open, refresh your browser to be able to use the new module.
+2. Automatic: When entering Rocketbot Studio on the right margin you will find the **Addons** section, select **Install Mods**, search for the desired module and press install.  
 
 
 ## Description of the commands
 
 ### WindowScope
   
-A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder.
+A container that enables you to attach to an already opened window and perform multiple actions within it. This activity is also automatically generated when using the Desktop recorder. The application that you want to automate should be opened prior to executing the activity.
 |Parameters|Description|example|
 | --- | --- | --- |
 |Selector|Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|

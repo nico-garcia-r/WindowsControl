@@ -1,3 +1,4 @@
+
 # MS Windows Controls
   
 Module to control MS Windows applications  
@@ -181,3 +182,4 @@ Returns the coordinates of the specified element. You can choose to move the mou
 |Source Seletor|Use selector obtained in DesktopRecorder. This selector is a text property used to find a particular UI element when the activity is executed. It is actually a XML or JSON fragment specifying attributes of the GUI element you are looking for and of some of its parents.|<wnd app='calc.exe' cls='CalcFrame' title='Calculadora' />|
 |Move mouse to the position|If this checkbox is checked, the mouse will move to the center of the element before returning the position|True|
 |Result|Variable where the result is stored|result|
+

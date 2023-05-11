@@ -560,13 +560,15 @@ try:
                         rows.append(cell.GetLegacyIAccessiblePattern().Value)
 
                     currentValue.append(rows)
-            if row_index:
-                currentValue = currentValue[row_index]
-                if col_index:
-                    currentValue = currentValue[col_index]
+                    
+                if row_index:
+                    currentValue = currentValue[row_index]
+                    if col_index:
+                        currentValue = currentValue[col_index]
                 SetVar(var_, currentValue)
             else:
                 raise Exception("Control type must be TableControl")
+
 
         except Exception as e:
             PrintException()

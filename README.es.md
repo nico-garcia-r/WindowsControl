@@ -2,23 +2,22 @@
   
 Módulo para controlar aplicaciones de MS Windows  
 
-Este módulo puede utilizarse con "Desktop Recorder"
-
-*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).* 
+*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
 
 ## Como instalar este módulo
   
-__Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Rocketbot.  
-
+Para instalar el módulo en Rocketbot Studio, se puede hacer de dos formas:
+1. Manual: __Descargar__ el archivo .zip y descomprimirlo en la carpeta modules. El nombre de la carpeta debe ser el mismo al del módulo y dentro debe tener los siguientes archivos y carpetas: \__init__.py, package.json, docs, example y libs. Si tiene abierta la aplicación, refresca el navegador para poder utilizar el nuevo modulo.
+2. Automática: Al ingresar a Rocketbot Studio sobre el margen derecho encontrara la sección de **Addons**, seleccionar **Install Mods**, buscar el modulo deseado y presionar install.  
 
 
 ## Overview
 
 
 1. Conectar Ventana  
-Se conecta a una ventana ya abierta y realizar múltiples acciones dentro de ella. Esta actividad también se genera automáticamente cuando se utiliza la grabadora de escritorio.
+Se conecta a una ventana ya abierta y realizar múltiples acciones dentro de ella. Esta actividad también se genera automáticamente cuando se utiliza la grabadora de escritorio. La aplicación que desea automatizar debe abrirse antes de ejecutar la actividad.
 
-2. Captura de pantalla del elemento 
+2. Captura de pantalla del elemento  
 Realiza una captura de pantalla del elemento y la guarda en el directorio especificado.
 
 3. Click  

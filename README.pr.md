@@ -1,22 +1,21 @@
 # MS Windows Controls
   
-Módulo para controlar aplicativos MS Windows
+Módulo para controlar aplicativos do MS Windows  
 
-Este módulo pode ser usado com "Desktop Recorder"
-
-*Read this in other languages: [English](README.md), [Portugues](README.pr.md), [Español](README.es.md).*
+*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
 
 ## Como instalar este módulo
   
-__Baixe__ e __instale__ o conteúdo na pasta 'modules' no caminho do Rocketbot  
-
+Para instalar o módulo no Rocketbot Studio, pode ser feito de duas formas:
+1. Manual: __Baixe__ o arquivo .zip e descompacte-o na pasta módulos. O nome da pasta deve ser o mesmo do módulo e dentro dela devem ter os seguintes arquivos e pastas: \__init__.py, package.json, docs, example e libs. Se você tiver o aplicativo aberto, atualize seu navegador para poder usar o novo módulo.
+2. Automático: Ao entrar no Rocketbot Studio na margem direita você encontrará a seção **Addons**, selecione **Install Mods**, procure o módulo desejado e aperte instalar.  
 
 
 ## Overview
 
 
 1. Conectar janela  
-Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop.
+Ele se conecta a uma janela já aberta e executa várias ações dentro dela. Essa atividade também é gerada automaticamente ao usar o gravador de desktop. O aplicativo que você deseja automatizar deve ser aberto antes de executar a atividade.
 
 2. Captura de tela do elemento  
 Tira uma captura de tela do elemento e salva no diretório especificado.
